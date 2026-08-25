@@ -1,0 +1,488 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/directsoundrecords/spl-reference-measurements/schemas/measurement.schema.json",
+  "title": "DSR SPL public measurement",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "identity",
+    "measurement",
+    "sound_level",
+    "measurement_settings",
+    "environment",
+    "public_location",
+    "instrument",
+    "calibration",
+    "software",
+    "measurement_quality",
+    "attribution",
+    "photo",
+    "publisher",
+    "license"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "identity": {
+      "$ref": "#/$defs/identity"
+    },
+    "measurement": {
+      "$ref": "#/$defs/measurement"
+    },
+    "sound_level": {
+      "$ref": "#/$defs/sound"
+    },
+    "measurement_settings": {
+      "$ref": "#/$defs/settings"
+    },
+    "environment": {
+      "$ref": "#/$defs/environment"
+    },
+    "public_location": {
+      "$ref": "#/$defs/location"
+    },
+    "instrument": {
+      "$ref": "#/$defs/instrument"
+    },
+    "calibration": {
+      "$ref": "#/$defs/calibration"
+    },
+    "software": {
+      "$ref": "#/$defs/software"
+    },
+    "measurement_quality": {
+      "$ref": "#/$defs/quality"
+    },
+    "attribution": {
+      "$ref": "#/$defs/attribution"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 4096
+    },
+    "photo": {
+      "$ref": "#/$defs/photo"
+    },
+    "publisher": {
+      "$ref": "#/$defs/publisher"
+    },
+    "license": {
+      "const": "CC-BY-4.0"
+    }
+  },
+  "$defs": {
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "public_measurement_id",
+        "measurement_uuid",
+        "record_version"
+      ],
+      "properties": {
+        "public_measurement_id": {
+          "type": "string",
+          "pattern": "^SPL-[0-9]{4}-[0-9]{6}$"
+        },
+        "measurement_uuid": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "record_version": {
+          "const": "1.0"
+        }
+      }
+    },
+    "measurement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "completed_at_utc",
+        "duration_seconds"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "completed_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "duration_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "sound": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "laeq_db_a",
+        "lafmax_db_a"
+      ],
+      "properties": {
+        "laeq_db_a": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "lceq_db_c": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "lzeq_db_z": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "lafmax_db_a": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "lafmin_db_a": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "lcpeak_db_c": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "settings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frequency_weightings",
+        "time_weightings"
+      ],
+      "properties": {
+        "frequency_weightings": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "A",
+              "C",
+              "Z"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "time_weightings": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "Fast",
+              "Slow",
+              "Impulse"
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "taxonomy_version",
+        "group_id",
+        "type_id"
+      ],
+      "properties": {
+        "taxonomy_version": {
+          "const": "1"
+        },
+        "group_id": {
+          "type": "string"
+        },
+        "type_id": {
+          "type": "string"
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "visibility",
+        "country_code",
+        "country_name",
+        "region",
+        "city",
+        "approximate_area",
+        "place_name"
+      ],
+      "properties": {
+        "visibility": {
+          "enum": [
+            "none",
+            "city",
+            "approximate_area",
+            "named_public_place"
+          ]
+        },
+        "country_code": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[A-Z]{2}$"
+        },
+        "country_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "region": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "city": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "approximate_area": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "place_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "visibility": {
+                "const": "none"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "country_code": {
+                "type": "null"
+              },
+              "country_name": {
+                "type": "null"
+              },
+              "region": {
+                "type": "null"
+              },
+              "city": {
+                "type": "null"
+              },
+              "approximate_area": {
+                "type": "null"
+              },
+              "place_name": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "instrument": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "microphone_display_name",
+        "input_path",
+        "device_hardware_identifier",
+        "os_name",
+        "os_version"
+      ],
+      "properties": {
+        "microphone_display_name": {
+          "type": "string"
+        },
+        "input_path": {
+          "type": "string"
+        },
+        "device_hardware_identifier": {
+          "type": "string"
+        },
+        "os_name": {
+          "type": "string"
+        },
+        "os_version": {
+          "type": "string"
+        }
+      }
+    },
+    "calibration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "method"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "indicative",
+            "device_calibrated",
+            "externally_calibrated"
+          ]
+        },
+        "method": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "software": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "application_version",
+        "build",
+        "analysis_method_version"
+      ],
+      "properties": {
+        "name": {
+          "const": "DSR SPL Reference"
+        },
+        "application_version": {
+          "type": "string"
+        },
+        "build": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "analysis_method_version": {
+          "type": "string"
+        }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "classification"
+      ],
+      "properties": {
+        "classification": {
+          "enum": [
+            "indicative",
+            "device_calibrated",
+            "externally_calibrated"
+          ]
+        }
+      }
+    },
+    "attribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "display_name",
+        "organisation"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "anonymous",
+            "name",
+            "name_and_organisation"
+          ]
+        },
+        "display_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "organisation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "photo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "included",
+        "filename",
+        "sha256"
+      ],
+      "properties": {
+        "included": {
+          "type": "boolean"
+        },
+        "filename": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "photo.jpg",
+            null
+          ]
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "publisher": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "application"
+      ],
+      "properties": {
+        "name": {
+          "const": "Direct Sound Records"
+        },
+        "application": {
+          "const": "DSR SPL Reference"
+        }
+      }
+    }
+  }
+}

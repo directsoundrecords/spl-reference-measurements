@@ -1,0 +1,1428 @@
+{
+  "taxonomy_version": "1",
+  "source_application": "DSR SPL Reference",
+  "groups": [
+    {
+      "group_id": "residential",
+      "display_name": "Home & Residential",
+      "types": [
+        {
+          "type_id": "home",
+          "display_name": "Home / Residence"
+        },
+        {
+          "type_id": "apartment",
+          "display_name": "Apartment / Flat"
+        },
+        {
+          "type_id": "detached_house",
+          "display_name": "Detached House"
+        },
+        {
+          "type_id": "terraced_or_semidetached_house",
+          "display_name": "Semi-detached / Terraced House"
+        },
+        {
+          "type_id": "residential_room",
+          "display_name": "Residential Room"
+        },
+        {
+          "type_id": "bedroom",
+          "display_name": "Bedroom"
+        },
+        {
+          "type_id": "living_room",
+          "display_name": "Living Room"
+        },
+        {
+          "type_id": "kitchen",
+          "display_name": "Kitchen"
+        },
+        {
+          "type_id": "home_office",
+          "display_name": "Home Office"
+        },
+        {
+          "type_id": "home_listening_room",
+          "display_name": "Home Listening Room / Hi-Fi Room"
+        },
+        {
+          "type_id": "home_cinema",
+          "display_name": "Home Cinema"
+        },
+        {
+          "type_id": "residential_corridor",
+          "display_name": "Residential Hallway / Corridor"
+        },
+        {
+          "type_id": "residential_shared_area",
+          "display_name": "Residential Shared Area"
+        },
+        {
+          "type_id": "residential_lobby",
+          "display_name": "Residential Lobby / Entrance"
+        },
+        {
+          "type_id": "residential_garden",
+          "display_name": "Residential Garden"
+        },
+        {
+          "type_id": "balcony_or_terrace",
+          "display_name": "Balcony / Terrace"
+        },
+        {
+          "type_id": "courtyard",
+          "display_name": "Courtyard"
+        },
+        {
+          "type_id": "residential_street",
+          "display_name": "Residential Street"
+        },
+        {
+          "type_id": "residential_parking_or_garage",
+          "display_name": "Residential Car Park / Garage"
+        },
+        {
+          "type_id": "apartment_common_area",
+          "display_name": "Apartment Building Common Area"
+        }
+      ]
+    },
+    {
+      "group_id": "food_drink",
+      "display_name": "Food & Drink",
+      "types": [
+        {
+          "type_id": "restaurant",
+          "display_name": "Restaurant"
+        },
+        {
+          "type_id": "fine_dining_restaurant",
+          "display_name": "Fine Dining Restaurant"
+        },
+        {
+          "type_id": "casual_restaurant",
+          "display_name": "Casual Restaurant"
+        },
+        {
+          "type_id": "fast_food_restaurant",
+          "display_name": "Fast-food Restaurant"
+        },
+        {
+          "type_id": "cafe",
+          "display_name": "Café"
+        },
+        {
+          "type_id": "coffee_shop",
+          "display_name": "Coffee Shop"
+        },
+        {
+          "type_id": "pub",
+          "display_name": "Pub"
+        },
+        {
+          "type_id": "bar",
+          "display_name": "Bar"
+        },
+        {
+          "type_id": "wine_bar",
+          "display_name": "Wine Bar"
+        },
+        {
+          "type_id": "cocktail_bar",
+          "display_name": "Cocktail Bar"
+        },
+        {
+          "type_id": "food_hall",
+          "display_name": "Food Hall"
+        },
+        {
+          "type_id": "food_court",
+          "display_name": "Food Court"
+        },
+        {
+          "type_id": "canteen",
+          "display_name": "Canteen / Cafeteria"
+        },
+        {
+          "type_id": "takeaway",
+          "display_name": "Takeaway / Take-out"
+        },
+        {
+          "type_id": "bakery_or_deli",
+          "display_name": "Bakery / Deli"
+        },
+        {
+          "type_id": "outdoor_dining",
+          "display_name": "Outdoor Dining Area"
+        },
+        {
+          "type_id": "restaurant_terrace",
+          "display_name": "Restaurant Terrace"
+        },
+        {
+          "type_id": "hotel_restaurant",
+          "display_name": "Hotel Restaurant"
+        },
+        {
+          "type_id": "brewery_or_taproom",
+          "display_name": "Brewery / Taproom"
+        }
+      ]
+    },
+    {
+      "group_id": "music_nightlife",
+      "display_name": "Music & Nightlife",
+      "types": [
+        {
+          "type_id": "nightclub",
+          "display_name": "Nightclub / Disco"
+        },
+        {
+          "type_id": "live_music_venue",
+          "display_name": "Live Music Venue"
+        },
+        {
+          "type_id": "concert_hall",
+          "display_name": "Concert Hall"
+        },
+        {
+          "type_id": "music_club",
+          "display_name": "Music Club"
+        },
+        {
+          "type_id": "jazz_club",
+          "display_name": "Jazz Club"
+        },
+        {
+          "type_id": "arena_concert",
+          "display_name": "Arena Concert Venue"
+        },
+        {
+          "type_id": "outdoor_concert",
+          "display_name": "Outdoor Concert Venue"
+        },
+        {
+          "type_id": "recording_studio",
+          "display_name": "Recording Studio"
+        },
+        {
+          "type_id": "control_room",
+          "display_name": "Control Room"
+        },
+        {
+          "type_id": "live_room",
+          "display_name": "Live Room"
+        },
+        {
+          "type_id": "rehearsal_room",
+          "display_name": "Rehearsal Room"
+        },
+        {
+          "type_id": "broadcast_studio",
+          "display_name": "Broadcast Studio"
+        },
+        {
+          "type_id": "radio_studio",
+          "display_name": "Radio Studio"
+        },
+        {
+          "type_id": "podcast_studio",
+          "display_name": "Podcast Studio"
+        },
+        {
+          "type_id": "postproduction_studio",
+          "display_name": "Post-production Studio"
+        },
+        {
+          "type_id": "mastering_studio",
+          "display_name": "Mastering Studio"
+        },
+        {
+          "type_id": "hifi_demo_room",
+          "display_name": "Hi-Fi Demonstration Room"
+        },
+        {
+          "type_id": "hifi_listening_room",
+          "display_name": "Hi-Fi Listening Room"
+        },
+        {
+          "type_id": "record_shop",
+          "display_name": "Record Shop"
+        },
+        {
+          "type_id": "music_shop",
+          "display_name": "Music Shop"
+        },
+        {
+          "type_id": "dj_booth",
+          "display_name": "DJ Booth"
+        },
+        {
+          "type_id": "karaoke",
+          "display_name": "Karaoke Venue"
+        }
+      ]
+    },
+    {
+      "group_id": "retail_commercial",
+      "display_name": "Retail & Commercial",
+      "types": [
+        {
+          "type_id": "shop",
+          "display_name": "Shop / Store"
+        },
+        {
+          "type_id": "supermarket",
+          "display_name": "Supermarket"
+        },
+        {
+          "type_id": "convenience_store",
+          "display_name": "Convenience Store"
+        },
+        {
+          "type_id": "department_store",
+          "display_name": "Department Store"
+        },
+        {
+          "type_id": "shopping_centre",
+          "display_name": "Shopping Centre / Mall"
+        },
+        {
+          "type_id": "indoor_market",
+          "display_name": "Indoor Market"
+        },
+        {
+          "type_id": "outdoor_market",
+          "display_name": "Outdoor Market"
+        },
+        {
+          "type_id": "covered_market",
+          "display_name": "Covered Market"
+        },
+        {
+          "type_id": "showroom",
+          "display_name": "Showroom"
+        },
+        {
+          "type_id": "car_dealership",
+          "display_name": "Car Dealership"
+        },
+        {
+          "type_id": "pharmacy",
+          "display_name": "Pharmacy"
+        },
+        {
+          "type_id": "bank",
+          "display_name": "Bank"
+        },
+        {
+          "type_id": "post_office",
+          "display_name": "Post Office"
+        },
+        {
+          "type_id": "hair_salon",
+          "display_name": "Hair Salon / Barber"
+        },
+        {
+          "type_id": "beauty_salon",
+          "display_name": "Beauty Salon"
+        },
+        {
+          "type_id": "service_counter",
+          "display_name": "Service Counter"
+        },
+        {
+          "type_id": "commercial_lobby",
+          "display_name": "Commercial Lobby"
+        },
+        {
+          "type_id": "commercial_waiting_area",
+          "display_name": "Commercial Waiting Area"
+        }
+      ]
+    },
+    {
+      "group_id": "office_work",
+      "display_name": "Office & Work",
+      "types": [
+        {
+          "type_id": "office",
+          "display_name": "Office"
+        },
+        {
+          "type_id": "private_office",
+          "display_name": "Private Office"
+        },
+        {
+          "type_id": "open_plan_office",
+          "display_name": "Open-plan Office"
+        },
+        {
+          "type_id": "shared_office",
+          "display_name": "Shared Office"
+        },
+        {
+          "type_id": "coworking",
+          "display_name": "Coworking Space"
+        },
+        {
+          "type_id": "meeting_room",
+          "display_name": "Meeting Room"
+        },
+        {
+          "type_id": "boardroom",
+          "display_name": "Boardroom"
+        },
+        {
+          "type_id": "conference_room",
+          "display_name": "Conference Room"
+        },
+        {
+          "type_id": "reception",
+          "display_name": "Reception"
+        },
+        {
+          "type_id": "office_lobby",
+          "display_name": "Office Lobby"
+        },
+        {
+          "type_id": "call_centre",
+          "display_name": "Call Centre"
+        },
+        {
+          "type_id": "customer_service_centre",
+          "display_name": "Customer Service Centre"
+        },
+        {
+          "type_id": "staff_room",
+          "display_name": "Staff Room"
+        },
+        {
+          "type_id": "office_break_area",
+          "display_name": "Office Kitchen / Break Area"
+        },
+        {
+          "type_id": "office_corridor",
+          "display_name": "Office Corridor"
+        },
+        {
+          "type_id": "professional_practice",
+          "display_name": "Professional Practice"
+        },
+        {
+          "type_id": "consulting_room",
+          "display_name": "Consulting Room"
+        }
+      ]
+    },
+    {
+      "group_id": "industrial",
+      "display_name": "Industrial",
+      "types": [
+        {
+          "type_id": "factory",
+          "display_name": "Factory"
+        },
+        {
+          "type_id": "manufacturing_floor",
+          "display_name": "Manufacturing Floor"
+        },
+        {
+          "type_id": "workshop",
+          "display_name": "Workshop"
+        },
+        {
+          "type_id": "mechanical_workshop",
+          "display_name": "Mechanical Workshop"
+        },
+        {
+          "type_id": "engineering_workshop",
+          "display_name": "Engineering Workshop"
+        },
+        {
+          "type_id": "warehouse",
+          "display_name": "Warehouse"
+        },
+        {
+          "type_id": "distribution_centre",
+          "display_name": "Distribution Centre"
+        },
+        {
+          "type_id": "logistics_facility",
+          "display_name": "Logistics Facility"
+        },
+        {
+          "type_id": "plant_room",
+          "display_name": "Plant Room"
+        },
+        {
+          "type_id": "machine_room",
+          "display_name": "Machine Room"
+        },
+        {
+          "type_id": "mechanical_equipment_room",
+          "display_name": "Mechanical Equipment Room"
+        },
+        {
+          "type_id": "boiler_room",
+          "display_name": "Boiler Room"
+        },
+        {
+          "type_id": "generator_room",
+          "display_name": "Generator Room"
+        },
+        {
+          "type_id": "compressor_room",
+          "display_name": "Compressor Room"
+        },
+        {
+          "type_id": "server_room",
+          "display_name": "Server Room"
+        },
+        {
+          "type_id": "data_centre",
+          "display_name": "Data Centre"
+        },
+        {
+          "type_id": "electrical_substation",
+          "display_name": "Electrical Substation"
+        },
+        {
+          "type_id": "laboratory",
+          "display_name": "Laboratory"
+        },
+        {
+          "type_id": "industrial_laboratory",
+          "display_name": "Industrial Laboratory"
+        },
+        {
+          "type_id": "agricultural_building",
+          "display_name": "Agricultural Building"
+        },
+        {
+          "type_id": "farm_workshop",
+          "display_name": "Farm Workshop"
+        },
+        {
+          "type_id": "processing_facility",
+          "display_name": "Processing Facility"
+        }
+      ]
+    },
+    {
+      "group_id": "construction",
+      "display_name": "Construction",
+      "types": [
+        {
+          "type_id": "construction_site",
+          "display_name": "Construction Site"
+        },
+        {
+          "type_id": "building_construction",
+          "display_name": "Building Construction"
+        },
+        {
+          "type_id": "interior_renovation",
+          "display_name": "Interior Construction / Renovation"
+        },
+        {
+          "type_id": "roadworks",
+          "display_name": "Roadworks"
+        },
+        {
+          "type_id": "railway_works",
+          "display_name": "Railway Works"
+        },
+        {
+          "type_id": "demolition",
+          "display_name": "Demolition Site"
+        },
+        {
+          "type_id": "excavation",
+          "display_name": "Excavation Site"
+        },
+        {
+          "type_id": "utility_works",
+          "display_name": "Utility Works"
+        },
+        {
+          "type_id": "maintenance_site",
+          "display_name": "Maintenance Site"
+        },
+        {
+          "type_id": "engineering_works",
+          "display_name": "Engineering Works"
+        },
+        {
+          "type_id": "drilling_site",
+          "display_name": "Drilling Site"
+        },
+        {
+          "type_id": "construction_compound",
+          "display_name": "Temporary Construction Compound"
+        }
+      ]
+    },
+    {
+      "group_id": "streets_roads",
+      "display_name": "Streets & Roads",
+      "types": [
+        {
+          "type_id": "urban_street",
+          "display_name": "Urban Street"
+        },
+        {
+          "type_id": "residential_street",
+          "display_name": "Residential Street"
+        },
+        {
+          "type_id": "main_road",
+          "display_name": "Main Road"
+        },
+        {
+          "type_id": "high_street",
+          "display_name": "High Street"
+        },
+        {
+          "type_id": "pedestrian_street",
+          "display_name": "Pedestrian Street"
+        },
+        {
+          "type_id": "roadside",
+          "display_name": "Roadside"
+        },
+        {
+          "type_id": "arterial_road",
+          "display_name": "Major Road / Arterial Road"
+        },
+        {
+          "type_id": "dual_carriageway",
+          "display_name": "Dual Carriageway"
+        },
+        {
+          "type_id": "motorway",
+          "display_name": "Motorway / Highway"
+        },
+        {
+          "type_id": "road_junction",
+          "display_name": "Road Junction"
+        },
+        {
+          "type_id": "roundabout",
+          "display_name": "Roundabout"
+        },
+        {
+          "type_id": "traffic_intersection",
+          "display_name": "Traffic Lights / Intersection"
+        },
+        {
+          "type_id": "pedestrian_crossing",
+          "display_name": "Pedestrian Crossing"
+        },
+        {
+          "type_id": "urban_square",
+          "display_name": "Urban Square / Plaza"
+        },
+        {
+          "type_id": "public_courtyard",
+          "display_name": "Public Courtyard"
+        },
+        {
+          "type_id": "alley",
+          "display_name": "Alley / Lane"
+        },
+        {
+          "type_id": "pavement",
+          "display_name": "Pavement / Sidewalk"
+        },
+        {
+          "type_id": "urban_car_park",
+          "display_name": "Urban Car Park"
+        },
+        {
+          "type_id": "multistorey_car_park",
+          "display_name": "Multi-storey Car Park"
+        },
+        {
+          "type_id": "fuel_station",
+          "display_name": "Petrol / Fuel Station"
+        }
+      ]
+    },
+    {
+      "group_id": "transport",
+      "display_name": "Transport",
+      "types": [
+        {
+          "type_id": "bus_stop",
+          "display_name": "Bus Stop"
+        },
+        {
+          "type_id": "bus_station",
+          "display_name": "Bus Station"
+        },
+        {
+          "type_id": "bus",
+          "display_name": "Bus Interior"
+        },
+        {
+          "type_id": "coach",
+          "display_name": "Coach Interior"
+        },
+        {
+          "type_id": "railway_station",
+          "display_name": "Railway Station"
+        },
+        {
+          "type_id": "railway_platform",
+          "display_name": "Railway Platform"
+        },
+        {
+          "type_id": "train",
+          "display_name": "Train Interior"
+        },
+        {
+          "type_id": "metro_station",
+          "display_name": "Metro / Underground Station"
+        },
+        {
+          "type_id": "metro_platform",
+          "display_name": "Metro / Underground Platform"
+        },
+        {
+          "type_id": "metro_train",
+          "display_name": "Metro / Underground Train"
+        },
+        {
+          "type_id": "tram_stop",
+          "display_name": "Tram Stop"
+        },
+        {
+          "type_id": "tram",
+          "display_name": "Tram Interior"
+        },
+        {
+          "type_id": "airport_terminal",
+          "display_name": "Airport Terminal"
+        },
+        {
+          "type_id": "airport_gate",
+          "display_name": "Airport Gate Area"
+        },
+        {
+          "type_id": "airport_baggage_hall",
+          "display_name": "Airport Baggage Hall"
+        },
+        {
+          "type_id": "airport_checkin",
+          "display_name": "Airport Check-in Area"
+        },
+        {
+          "type_id": "aircraft",
+          "display_name": "Aircraft Cabin"
+        },
+        {
+          "type_id": "ferry_terminal",
+          "display_name": "Ferry Terminal"
+        },
+        {
+          "type_id": "ferry",
+          "display_name": "Ferry / Ship Interior"
+        },
+        {
+          "type_id": "port_terminal",
+          "display_name": "Port / Harbour Terminal"
+        },
+        {
+          "type_id": "taxi",
+          "display_name": "Taxi Interior"
+        },
+        {
+          "type_id": "car",
+          "display_name": "Car Interior"
+        },
+        {
+          "type_id": "van",
+          "display_name": "Van Interior"
+        },
+        {
+          "type_id": "transport_waiting_area",
+          "display_name": "Transport Waiting Area"
+        }
+      ]
+    },
+    {
+      "group_id": "education",
+      "display_name": "Education",
+      "types": [
+        {
+          "type_id": "nursery",
+          "display_name": "Nursery"
+        },
+        {
+          "type_id": "primary_school",
+          "display_name": "Primary School"
+        },
+        {
+          "type_id": "secondary_school",
+          "display_name": "Secondary School"
+        },
+        {
+          "type_id": "college",
+          "display_name": "College"
+        },
+        {
+          "type_id": "university",
+          "display_name": "University"
+        },
+        {
+          "type_id": "classroom",
+          "display_name": "Classroom"
+        },
+        {
+          "type_id": "lecture_theatre",
+          "display_name": "Lecture Theatre"
+        },
+        {
+          "type_id": "seminar_room",
+          "display_name": "Seminar Room"
+        },
+        {
+          "type_id": "teaching_lab",
+          "display_name": "Teaching Laboratory"
+        },
+        {
+          "type_id": "school_hall",
+          "display_name": "School Hall"
+        },
+        {
+          "type_id": "school_corridor",
+          "display_name": "School Corridor"
+        },
+        {
+          "type_id": "school_cafeteria",
+          "display_name": "School Cafeteria"
+        },
+        {
+          "type_id": "university_common_area",
+          "display_name": "University Common Area"
+        },
+        {
+          "type_id": "study_area",
+          "display_name": "Study Area"
+        },
+        {
+          "type_id": "library",
+          "display_name": "Library"
+        },
+        {
+          "type_id": "student_accommodation_common_area",
+          "display_name": "Student Accommodation Common Area"
+        },
+        {
+          "type_id": "school_playground",
+          "display_name": "School Playground"
+        },
+        {
+          "type_id": "campus_outdoor",
+          "display_name": "Campus Outdoor Area"
+        }
+      ]
+    },
+    {
+      "group_id": "healthcare",
+      "display_name": "Healthcare",
+      "types": [
+        {
+          "type_id": "hospital",
+          "display_name": "Hospital"
+        },
+        {
+          "type_id": "hospital_ward",
+          "display_name": "Hospital Ward"
+        },
+        {
+          "type_id": "emergency_department",
+          "display_name": "Emergency Department"
+        },
+        {
+          "type_id": "hospital_corridor",
+          "display_name": "Hospital Corridor"
+        },
+        {
+          "type_id": "hospital_waiting_area",
+          "display_name": "Hospital Waiting Area"
+        },
+        {
+          "type_id": "clinic",
+          "display_name": "Clinic"
+        },
+        {
+          "type_id": "medical_consulting_room",
+          "display_name": "Medical Consulting Room"
+        },
+        {
+          "type_id": "treatment_room",
+          "display_name": "Treatment Room"
+        },
+        {
+          "type_id": "dental_practice",
+          "display_name": "Dental Practice"
+        },
+        {
+          "type_id": "physiotherapy",
+          "display_name": "Physiotherapy Clinic"
+        },
+        {
+          "type_id": "diagnostic_room",
+          "display_name": "Diagnostic Room"
+        },
+        {
+          "type_id": "care_home",
+          "display_name": "Care Home"
+        },
+        {
+          "type_id": "nursing_home",
+          "display_name": "Nursing Home"
+        },
+        {
+          "type_id": "assisted_living",
+          "display_name": "Assisted Living"
+        },
+        {
+          "type_id": "rehabilitation",
+          "display_name": "Rehabilitation Centre"
+        },
+        {
+          "type_id": "healthcare_reception",
+          "display_name": "Healthcare Reception"
+        },
+        {
+          "type_id": "healthcare_waiting_room",
+          "display_name": "Healthcare Waiting Room"
+        }
+      ]
+    },
+    {
+      "group_id": "accommodation",
+      "display_name": "Hotels & Accommodation",
+      "types": [
+        {
+          "type_id": "hotel",
+          "display_name": "Hotel"
+        },
+        {
+          "type_id": "hotel_room",
+          "display_name": "Hotel Room"
+        },
+        {
+          "type_id": "hotel_suite",
+          "display_name": "Hotel Suite"
+        },
+        {
+          "type_id": "hotel_lobby",
+          "display_name": "Hotel Lobby"
+        },
+        {
+          "type_id": "hotel_corridor",
+          "display_name": "Hotel Corridor"
+        },
+        {
+          "type_id": "hotel_lounge",
+          "display_name": "Hotel Lounge"
+        },
+        {
+          "type_id": "hotel_conference_area",
+          "display_name": "Hotel Conference Area"
+        },
+        {
+          "type_id": "hostel",
+          "display_name": "Hostel"
+        },
+        {
+          "type_id": "guest_house",
+          "display_name": "Guest House"
+        },
+        {
+          "type_id": "bed_and_breakfast",
+          "display_name": "Bed & Breakfast"
+        },
+        {
+          "type_id": "holiday_rental",
+          "display_name": "Holiday Rental"
+        },
+        {
+          "type_id": "resort",
+          "display_name": "Resort"
+        },
+        {
+          "type_id": "campsite",
+          "display_name": "Campsite"
+        },
+        {
+          "type_id": "caravan_site",
+          "display_name": "Caravan Site"
+        },
+        {
+          "type_id": "holiday_park",
+          "display_name": "Holiday Park"
+        }
+      ]
+    },
+    {
+      "group_id": "sport_leisure",
+      "display_name": "Sport & Leisure",
+      "types": [
+        {
+          "type_id": "gym",
+          "display_name": "Gym"
+        },
+        {
+          "type_id": "fitness_studio",
+          "display_name": "Fitness Studio"
+        },
+        {
+          "type_id": "indoor_sports_hall",
+          "display_name": "Indoor Sports Hall"
+        },
+        {
+          "type_id": "outdoor_sports_ground",
+          "display_name": "Outdoor Sports Ground"
+        },
+        {
+          "type_id": "stadium",
+          "display_name": "Stadium"
+        },
+        {
+          "type_id": "arena",
+          "display_name": "Arena"
+        },
+        {
+          "type_id": "football_ground",
+          "display_name": "Football Ground"
+        },
+        {
+          "type_id": "rugby_ground",
+          "display_name": "Rugby Ground"
+        },
+        {
+          "type_id": "basketball_court",
+          "display_name": "Basketball Court"
+        },
+        {
+          "type_id": "tennis_court",
+          "display_name": "Tennis Court"
+        },
+        {
+          "type_id": "padel_court",
+          "display_name": "Padel Court"
+        },
+        {
+          "type_id": "squash_court",
+          "display_name": "Squash Court"
+        },
+        {
+          "type_id": "swimming_pool",
+          "display_name": "Swimming Pool"
+        },
+        {
+          "type_id": "ice_rink",
+          "display_name": "Ice Rink"
+        },
+        {
+          "type_id": "bowling_alley",
+          "display_name": "Bowling Alley"
+        },
+        {
+          "type_id": "golf_course",
+          "display_name": "Golf Course"
+        },
+        {
+          "type_id": "driving_range",
+          "display_name": "Driving Range"
+        },
+        {
+          "type_id": "athletics_track",
+          "display_name": "Athletics Track"
+        },
+        {
+          "type_id": "climbing_centre",
+          "display_name": "Climbing Centre"
+        },
+        {
+          "type_id": "playground",
+          "display_name": "Playground"
+        },
+        {
+          "type_id": "skate_park",
+          "display_name": "Skate Park"
+        },
+        {
+          "type_id": "spa",
+          "display_name": "Spa"
+        },
+        {
+          "type_id": "amusement_arcade",
+          "display_name": "Amusement Arcade"
+        },
+        {
+          "type_id": "theme_park",
+          "display_name": "Theme Park"
+        },
+        {
+          "type_id": "amusement_park",
+          "display_name": "Amusement Park"
+        }
+      ]
+    },
+    {
+      "group_id": "culture_public",
+      "display_name": "Culture & Public Venues",
+      "types": [
+        {
+          "type_id": "theatre",
+          "display_name": "Theatre"
+        },
+        {
+          "type_id": "cinema",
+          "display_name": "Cinema"
+        },
+        {
+          "type_id": "auditorium",
+          "display_name": "Auditorium"
+        },
+        {
+          "type_id": "museum",
+          "display_name": "Museum"
+        },
+        {
+          "type_id": "art_gallery",
+          "display_name": "Art Gallery"
+        },
+        {
+          "type_id": "public_library",
+          "display_name": "Public Library"
+        },
+        {
+          "type_id": "community_centre",
+          "display_name": "Community Centre"
+        },
+        {
+          "type_id": "civic_centre",
+          "display_name": "Civic Centre"
+        },
+        {
+          "type_id": "town_hall",
+          "display_name": "Town Hall"
+        },
+        {
+          "type_id": "government_building",
+          "display_name": "Government Building"
+        },
+        {
+          "type_id": "courthouse",
+          "display_name": "Courthouse"
+        },
+        {
+          "type_id": "exhibition_centre",
+          "display_name": "Exhibition Centre"
+        },
+        {
+          "type_id": "convention_centre",
+          "display_name": "Convention Centre"
+        },
+        {
+          "type_id": "conference_venue",
+          "display_name": "Conference Venue"
+        },
+        {
+          "type_id": "trade_show_venue",
+          "display_name": "Trade Show Venue"
+        },
+        {
+          "type_id": "place_of_worship",
+          "display_name": "Place of Worship"
+        },
+        {
+          "type_id": "church",
+          "display_name": "Church"
+        },
+        {
+          "type_id": "mosque",
+          "display_name": "Mosque"
+        },
+        {
+          "type_id": "synagogue",
+          "display_name": "Synagogue"
+        },
+        {
+          "type_id": "temple",
+          "display_name": "Temple"
+        },
+        {
+          "type_id": "cultural_centre",
+          "display_name": "Cultural Centre"
+        },
+        {
+          "type_id": "visitor_centre",
+          "display_name": "Visitor Centre"
+        }
+      ]
+    },
+    {
+      "group_id": "events",
+      "display_name": "Events",
+      "types": [
+        {
+          "type_id": "music_festival",
+          "display_name": "Music Festival"
+        },
+        {
+          "type_id": "outdoor_festival",
+          "display_name": "Outdoor Festival"
+        },
+        {
+          "type_id": "indoor_festival",
+          "display_name": "Indoor Festival"
+        },
+        {
+          "type_id": "fair",
+          "display_name": "Fair"
+        },
+        {
+          "type_id": "street_festival",
+          "display_name": "Street Festival"
+        },
+        {
+          "type_id": "food_festival",
+          "display_name": "Food Festival"
+        },
+        {
+          "type_id": "trade_fair",
+          "display_name": "Trade Fair"
+        },
+        {
+          "type_id": "exhibition",
+          "display_name": "Exhibition"
+        },
+        {
+          "type_id": "conference",
+          "display_name": "Conference"
+        },
+        {
+          "type_id": "public_event",
+          "display_name": "Public Event"
+        },
+        {
+          "type_id": "private_event",
+          "display_name": "Private Event"
+        },
+        {
+          "type_id": "wedding",
+          "display_name": "Wedding"
+        },
+        {
+          "type_id": "sporting_event",
+          "display_name": "Sporting Event"
+        },
+        {
+          "type_id": "parade",
+          "display_name": "Parade"
+        },
+        {
+          "type_id": "public_gathering",
+          "display_name": "Public Gathering"
+        },
+        {
+          "type_id": "temporary_performance_space",
+          "display_name": "Temporary Performance Space"
+        },
+        {
+          "type_id": "popup_venue",
+          "display_name": "Pop-up Venue"
+        }
+      ]
+    },
+    {
+      "group_id": "nature_outdoors",
+      "display_name": "Nature & Outdoors",
+      "types": [
+        {
+          "type_id": "urban_park",
+          "display_name": "Urban Park"
+        },
+        {
+          "type_id": "public_garden",
+          "display_name": "Public Garden"
+        },
+        {
+          "type_id": "woodland",
+          "display_name": "Woodland"
+        },
+        {
+          "type_id": "countryside",
+          "display_name": "Countryside"
+        },
+        {
+          "type_id": "rural_area",
+          "display_name": "Rural Area"
+        },
+        {
+          "type_id": "agricultural_land",
+          "display_name": "Agricultural Land"
+        },
+        {
+          "type_id": "farm",
+          "display_name": "Farm"
+        },
+        {
+          "type_id": "nature_reserve",
+          "display_name": "Nature Reserve"
+        },
+        {
+          "type_id": "national_park",
+          "display_name": "National Park"
+        },
+        {
+          "type_id": "walking_trail",
+          "display_name": "Walking Trail"
+        },
+        {
+          "type_id": "hiking_trail",
+          "display_name": "Hiking Trail"
+        },
+        {
+          "type_id": "mountain",
+          "display_name": "Mountain"
+        },
+        {
+          "type_id": "valley",
+          "display_name": "Valley"
+        },
+        {
+          "type_id": "river",
+          "display_name": "River"
+        },
+        {
+          "type_id": "riverside",
+          "display_name": "Riverside"
+        },
+        {
+          "type_id": "lake",
+          "display_name": "Lake"
+        },
+        {
+          "type_id": "lakeside",
+          "display_name": "Lakeside"
+        },
+        {
+          "type_id": "canal",
+          "display_name": "Canal"
+        },
+        {
+          "type_id": "canalside",
+          "display_name": "Canalside"
+        },
+        {
+          "type_id": "beach",
+          "display_name": "Beach"
+        },
+        {
+          "type_id": "coast",
+          "display_name": "Coast"
+        },
+        {
+          "type_id": "harbour_or_marina",
+          "display_name": "Harbour / Marina"
+        },
+        {
+          "type_id": "wetland",
+          "display_name": "Wetland"
+        },
+        {
+          "type_id": "open_field",
+          "display_name": "Open Field"
+        },
+        {
+          "type_id": "camping_area",
+          "display_name": "Camping Area"
+        },
+        {
+          "type_id": "remote_natural_environment",
+          "display_name": "Remote Natural Environment"
+        }
+      ]
+    },
+    {
+      "group_id": "other",
+      "display_name": "Other / Specialist",
+      "types": [
+        {
+          "type_id": "research_environment",
+          "display_name": "Research Environment"
+        },
+        {
+          "type_id": "acoustic_test_environment",
+          "display_name": "Acoustic Test Environment"
+        },
+        {
+          "type_id": "anechoic_chamber",
+          "display_name": "Anechoic Chamber"
+        },
+        {
+          "type_id": "reverberation_chamber",
+          "display_name": "Reverberation Chamber"
+        },
+        {
+          "type_id": "test_laboratory",
+          "display_name": "Test Laboratory"
+        },
+        {
+          "type_id": "equipment_test_area",
+          "display_name": "Equipment Test Area"
+        },
+        {
+          "type_id": "military_environment",
+          "display_name": "Military Environment"
+        },
+        {
+          "type_id": "emergency_services",
+          "display_name": "Emergency Services Facility"
+        },
+        {
+          "type_id": "prison",
+          "display_name": "Prison"
+        },
+        {
+          "type_id": "animal_facility",
+          "display_name": "Animal Facility"
+        },
+        {
+          "type_id": "veterinary_practice",
+          "display_name": "Veterinary Practice"
+        },
+        {
+          "type_id": "zoo",
+          "display_name": "Zoo"
+        },
+        {
+          "type_id": "aquarium",
+          "display_name": "Aquarium"
+        },
+        {
+          "type_id": "other_indoor",
+          "display_name": "Other Indoor Environment"
+        },
+        {
+          "type_id": "other_outdoor",
+          "display_name": "Other Outdoor Environment"
+        },
+        {
+          "type_id": "unclassified",
+          "display_name": "Not classified"
+        }
+      ]
+    }
+  ]
+}

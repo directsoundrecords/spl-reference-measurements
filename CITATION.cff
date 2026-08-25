@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: Please cite this dataset and the individual public measurement IDs used.
+title: DSR SPL Reference Measurements
+type: dataset
+authors:
+  - name: Direct Sound Records
+repository-code: https://github.com/directsoundrecords/spl-reference-measurements
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2026-08-25
