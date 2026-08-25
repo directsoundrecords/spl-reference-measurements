@@ -1,0 +1,82 @@
+{
+  "environment": {
+    "group_id": "residential",
+    "type_id": "home",
+    "taxonomy_version": "1"
+  },
+  "public_location": {
+    "visibility": "none",
+    "country_name": null,
+    "approximate_area": null,
+    "region": null,
+    "country_code": null,
+    "city": null,
+    "place_name": null
+  },
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "software": {
+    "name": "DSR SPL Reference",
+    "application_version": "1.0",
+    "analysis_method_version": "spl-reference-1",
+    "build": "1"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "attribution": {
+    "mode": "anonymous",
+    "display_name": null,
+    "organisation": null
+  },
+  "sound_level": {
+    "lafmin_db_a": 39.092983991861004,
+    "lzeq_db_z": 84.42731936166717,
+    "lafmax_db_a": 97.56728862128459,
+    "lcpeak_db_c": 123.87465020401486,
+    "laeq_db_a": 83.61985473220274,
+    "lceq_db_c": 83.37457062511626
+  },
+  "photo": {
+    "sha256": null,
+    "included": false,
+    "filename": null
+  },
+  "measurement": {
+    "duration_seconds": 258.9999999999904,
+    "completed_at_utc": "2026-08-25T14:03:39Z",
+    "title": "Domestic Vacuum Cleaning"
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "schema_version": "1.0.0",
+  "instrument": {
+    "microphone_display_name": "iPhone microphone",
+    "input_path": "Built-in input",
+    "os_version": "Version 26.6.1 (Build 23G83)",
+    "os_name": "iOS",
+    "device_hardware_identifier": "iPhone16,1"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000003",
+    "measurement_uuid": "2283660b-fef5-43a1-9ab8-4e1239be0401",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
