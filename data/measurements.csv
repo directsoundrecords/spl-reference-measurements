@@ -1,1 +1,2 @@
 public_measurement_id,measurement_uuid,date,environment_group,environment_type,country,region,city,location_visibility,laeq_db_a,lafmax_db_a,duration_seconds,quality_classification,attribution_mode,app_version,record_path
+SPL-2026-000002,2bd39a31-7fee-4cd3-80db-c2fbed663bce,2026-08-25,retail_commercial,indoor_market,,,,none,76.98970001829595,76.99225168216401,0.7379999999999999,indicative,anonymous,1.0,measurements/2026/08/SPL-2026-000002/measurement.json
