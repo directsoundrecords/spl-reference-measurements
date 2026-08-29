@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "measurement": {
+    "duration_seconds": 2639.399999998695,
+    "title": "Dinner At Funnies pub",
+    "completed_at_utc": "2026-08-15T16:25:55Z"
+  },
+  "software": {
+    "analysis_method_version": "spl-reference-1",
+    "name": "DSR SPL Reference",
+    "application_version": "1.0",
+    "build": "1"
+  },
+  "notes": "This measurement was taken during an evening dinner with friends at Funny’s Pub in Sapri, southern Italy. It represents a typical social dining environment rather than a controlled acoustic test: several people were talking around the table while normal restaurant activity continued in the background, including nearby conversations, staff movement, tableware and the general ambience of the venue.\n\nThe recording is therefore intended as a snapshot of the real-world sound level experienced by a guest during a lively but ordinary evening out. Measurements like this can be useful when comparing everyday leisure environments and understanding how conversational noise, music and room occupancy combine to create the acoustic character of restaurants and pubs.",
+  "instrument": {
+    "microphone_display_name": "iPhone microphone",
+    "input_path": "Built-in input",
+    "os_version": "Version 26.6 (Build 23G71)",
+    "device_hardware_identifier": "iPhone16,1",
+    "os_name": "iOS"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "calibration": {
+    "method": "Uncalibrated",
+    "status": "indicative"
+  },
+  "sound_level": {
+    "lcpeak_db_c": 105.99895961818147,
+    "lzeq_db_z": 56.07682306196036,
+    "lceq_db_c": 55.452449602592,
+    "lafmax_db_a": 83.48019783637821,
+    "laeq_db_a": 49.29052925786647,
+    "lafmin_db_a": 40.81008888636046
+  },
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "public_location": {
+    "approximate_area": null,
+    "country_name": "Italy",
+    "region": "Campania",
+    "place_name": null,
+    "city": "Sapri",
+    "visibility": "city",
+    "country_code": "IT"
+  },
+  "environment": {
+    "taxonomy_version": "1",
+    "group_id": "food_drink",
+    "type_id": "pub"
+  },
+  "photo": {
+    "filename": null,
+    "sha256": null,
+    "included": false
+  },
+  "attribution": {
+    "mode": "name",
+    "organisation": null,
+    "display_name": "Michelangelo Canonico"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000006",
+    "measurement_uuid": "2cfddf02-287d-494b-95e4-3a327255ea98",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
