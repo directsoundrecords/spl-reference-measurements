@@ -1,1 +1,2 @@
 public_measurement_id,measurement_uuid,date,environment_group,environment_type,country,region,city,location_visibility,laeq_db_a,lafmax_db_a,duration_seconds,quality_classification,attribution_mode,app_version,record_path
+SPL-2026-000004,83ebdc13-1630-47e6-9a6e-d0622be95482,2026-08-22,retail_commercial,outdoor_market,United Kingdom,,London,city,63.72514033020926,84.08901517469741,181.099999999994,indicative,name,1.0,measurements/2026/08/SPL-2026-000004/measurement.json
