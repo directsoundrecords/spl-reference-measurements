@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1016">
+  <meta name="description" content="Browse public sound-level measurements contributed through DSR SPL Reference.">
+  <meta property="og:title" content="DSR Public Measurement Library">
+  <meta property="og:description" content="A transparent, open catalogue of contributed sound-level measurements.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://directsoundrecords.github.io/spl-reference-measurements/">
+  <title>DSR Public Measurement Library</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <nav aria-label="Primary navigation">
+      <a class="brand" href="./" aria-label="DSR Public Measurement Library home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Direct Sound Records</span>
+      </a>
+      <a class="repository-link" href="https://github.com/directsoundrecords/spl-reference-measurements">View source data <span aria-hidden="true">↗</span></a>
+    </nav>
+    <div class="hero-copy">
+      <p class="eyebrow">DSR SPL Reference</p>
+      <h1>Public Measurement Library</h1>
+      <p class="intro">Explore sound-level measurements shared by the community. Every entry links to its complete public record for transparent review.</p>
+    </div>
+    <dl class="summary" aria-label="Catalogue summary">
+      <div><dt>Measurements</dt><dd id="measurement-count">—</dd></div>
+      <div><dt>Public locations</dt><dd id="location-count">—</dd></div>
+      <div><dt>Data licence</dt><dd>CC BY 4.0</dd></div>
+    </dl>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Filter measurements">
+      <label class="search-field">
+        <span>Search measurements</span>
+        <input id="search" type="search" placeholder="Title, city, country or reference" autocomplete="off">
+      </label>
+      <label>
+        <span>Environment</span>
+        <select id="environment-filter"><option value="">All environments</option></select>
+      </label>
+      <label>
+        <span>Sort</span>
+        <select id="sort">
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="loudest">Highest LAeq</option>
+        </select>
+      </label>
+    </section>
+
+    <div class="results-heading">
+      <h2>Measurements</h2>
+      <p id="result-count" aria-live="polite"></p>
+    </div>
+    <section id="measurement-list" class="measurement-grid" aria-busy="true"></section>
+    <p id="empty-state" class="empty-state" hidden>No measurements match those filters.</p>
+    <p id="error-state" class="empty-state" hidden>The catalogue could not be loaded. The source records remain available on GitHub.</p>
+  </main>
+
+  <footer>
+    <p>Only information explicitly approved for public contribution is displayed. Original photograph metadata and precise coordinates are not published.</p>
+    <p><a href="https://github.com/directsoundrecords/spl-reference-measurements/blob/main/METHODS.md">Methods</a> · <a href="https://github.com/directsoundrecords/spl-reference-measurements/blob/main/PRIVACY.md">Privacy</a> · <a href="https://github.com/directsoundrecords/spl-reference-measurements/blob/main/LICENSE.md">Licence</a></p>
+  </footer>
+
+  <template id="measurement-template">
+    <article class="measurement-card">
+      <div class="photo-wrap" hidden><img class="measurement-photo" alt="" loading="lazy"></div>
+      <div class="card-body">
+        <div class="card-kicker"><span class="environment-pill"></span><time></time></div>
+        <h3></h3>
+        <p class="location"></p>
+        <dl class="levels">
+          <div><dt>LAeq</dt><dd class="laeq"></dd></div>
+          <div><dt>LAFmax</dt><dd class="lafmax"></dd></div>
+          <div><dt>LCpeak</dt><dd class="lcpeak"></dd></div>
+          <div><dt>Duration</dt><dd class="duration"></dd></div>
+        </dl>
+        <details>
+          <summary>Measurement details</summary>
+          <dl class="details-list"></dl>
+          <p class="notes" hidden></p>
+        </details>
+        <div class="card-footer"><span class="measurement-id"></span><a class="record-link">Open public record <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </article>
+  </template>
+</body>
+</html>
