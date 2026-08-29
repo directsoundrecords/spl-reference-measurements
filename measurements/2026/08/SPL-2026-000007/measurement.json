@@ -1,0 +1,83 @@
+{
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "public_location": {
+    "approximate_area": null,
+    "country_code": "IT",
+    "country_name": "Italy",
+    "region": "Campania",
+    "place_name": null,
+    "visibility": "city",
+    "city": "Villammare"
+  },
+  "photo": {
+    "included": false,
+    "filename": null,
+    "sha256": null
+  },
+  "measurement": {
+    "duration_seconds": 3251.4999999981383,
+    "completed_at_utc": "2026-08-13T19:14:02Z",
+    "title": "Elation Club Residence - Disco Night Outside"
+  },
+  "notes": "This measurement was taken outdoors at night from a residential property located close to Elayon Club Residence, a nearby tourist village where amplified music was being played during the evening.\n\nUnlike a measurement taken inside the entertainment venue itself, this recording represents the sound as experienced from the surrounding residential area. The measured level therefore reflects not only the music source, but also the effects of distance, outdoor propagation, local geography and the general nighttime background environment.\n\nThis type of measurement can provide useful context when documenting how leisure and tourist activities contribute to the acoustic environment beyond the boundaries of the venue itself, particularly during evening and nighttime hours when background sound levels are generally lower.",
+  "environment": {
+    "taxonomy_version": "1",
+    "type_id": "nightclub",
+    "group_id": "music_nightlife"
+  },
+  "calibration": {
+    "method": "Uncalibrated",
+    "status": "indicative"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "sound_level": {
+    "lceq_db_c": 91.36845754400406,
+    "lzeq_db_z": 91.40876342664987,
+    "laeq_db_a": 89.31230749640903,
+    "lafmax_db_a": 106.51293066128191,
+    "lafmin_db_a": 72.52982526118035,
+    "lcpeak_db_c": 130.53844708586018
+  },
+  "attribution": {
+    "mode": "name",
+    "organisation": null,
+    "display_name": "Michelangelo Canonico"
+  },
+  "schema_version": "1.0.0",
+  "software": {
+    "application_version": "1.0",
+    "build": "1",
+    "name": "DSR SPL Reference",
+    "analysis_method_version": "spl-reference-1"
+  },
+  "instrument": {
+    "microphone_display_name": "iPhone microphone",
+    "input_path": "Built-in input",
+    "device_hardware_identifier": "iPhone16,1",
+    "os_version": "Version 26.6 (Build 23G71)",
+    "os_name": "iOS"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000007",
+    "measurement_uuid": "d278796c-4d74-4eaf-a350-c347edb9cd93",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
