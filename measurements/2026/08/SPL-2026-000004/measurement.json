@@ -1,0 +1,83 @@
+{
+  "software": {
+    "name": "DSR SPL Reference",
+    "build": "1",
+    "application_version": "1.0",
+    "analysis_method_version": "spl-reference-1"
+  },
+  "photo": {
+    "filename": "photo.jpg",
+    "sha256": "61fbb184a7eced43626e826657f3d59c9a8b83dae1883596381dc83a05c4710b",
+    "included": true
+  },
+  "instrument": {
+    "os_name": "iOS",
+    "input_path": "Built-in input",
+    "microphone_display_name": "iPhone microphone",
+    "os_version": "Version 26.6.1 (Build 23G83)",
+    "device_hardware_identifier": "iPhone16,1"
+  },
+  "environment": {
+    "type_id": "outdoor_market",
+    "taxonomy_version": "1",
+    "group_id": "retail_commercial"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "attribution": {
+    "mode": "name",
+    "display_name": "Michelangelo Canonico",
+    "organisation": null
+  },
+  "sound_level": {
+    "lafmin_db_a": 51.11623179706997,
+    "lcpeak_db_c": 106.93640442067253,
+    "lzeq_db_z": 75.07383654663322,
+    "lafmax_db_a": 84.08901517469741,
+    "lceq_db_c": 73.91574908146195,
+    "laeq_db_a": 63.72514033020926
+  },
+  "measurement": {
+    "duration_seconds": 181.099999999994,
+    "title": "Gypsy Hill Market",
+    "completed_at_utc": "2026-08-22T14:05:16Z"
+  },
+  "public_location": {
+    "place_name": null,
+    "country_code": "GB",
+    "approximate_area": null,
+    "city": "London",
+    "country_name": "United Kingdom",
+    "visibility": "city",
+    "region": null
+  },
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "notes": "London - Gypsy Hill",
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "schema_version": "1.0.0",
+  "identity": {
+    "public_measurement_id": "SPL-2026-000004",
+    "measurement_uuid": "83ebdc13-1630-47e6-9a6e-d0622be95482",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
