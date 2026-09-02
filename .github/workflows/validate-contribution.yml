@@ -11,4 +11,4 @@ jobs:
       - run: pip install jsonschema Pillow
       - run: python tools/validate_measurement.py
       - name: Smoke-test generated index rebuild
-        run: python tools/rebuild_index.py
+        run: python tools/rebuild_index.py /tmp/measurements.csv
