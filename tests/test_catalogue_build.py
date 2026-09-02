@@ -10,13 +10,14 @@ import tempfile
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPOSITORY_ROOT))
 
 from tools.build_site import build_site  # noqa: E402
-from tools.catalogue import load_catalogue  # noqa: E402
+from tools.catalogue import load_catalogue, parse_rfc3339_instant  # noqa: E402
 
 
 TEMPLATE = REPOSITORY_ROOT / "docs" / "index.template.html"
@@ -59,6 +60,16 @@ REQUIRED_CSV_FIELDS = {
     "attribution_mode",
     "app_version",
     "record_path",
+}
+PUBLIC_SITE_URL = "https://directsoundrecords.github.io/spl-reference-measurements/"
+CC_BY_4_0_URL = "https://creativecommons.org/licenses/by/4.0/"
+REQUIRED_MEASURED_VARIABLES = {
+    "LAeq",
+    "LAFmax",
+    "LAFmin",
+    "LCpeak",
+    "LCeq",
+    "LZeq",
 }
 
 
@@ -185,6 +196,34 @@ class CatalogueHTMLParser(HTMLParser):
                 break
 
 
+class JSONLDHTMLParser(HTMLParser):
+    """Collect static ``application/ld+json`` script contents."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=False)
+        self.scripts: list[str] = []
+        self._current: list[str] | None = None
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag != "script":
+            return
+        attributes = {key.casefold(): (value or "") for key, value in attrs}
+        media_type = attributes.get("type", "").split(";", 1)[0].strip().casefold()
+        if media_type == "application/ld+json":
+            if attributes.get("src"):
+                raise AssertionError("JSON-LD must be embedded statically, not loaded by src")
+            self._current = []
+
+    def handle_data(self, data: str) -> None:
+        if self._current is not None:
+            self._current.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "script" and self._current is not None:
+            self.scripts.append("".join(self._current))
+            self._current = None
+
+
 def canonical_records(root: Path) -> list[tuple[Path, dict]]:
     return [
         (path, json.loads(path.read_text(encoding="utf-8")))
@@ -207,6 +246,50 @@ def private_keys(value) -> set[str]:
         for child in value:
             keys.update(private_keys(child))
     return keys
+
+
+def nested_dicts(value):
+    """Yield every object in a JSON-compatible tree."""
+
+    if isinstance(value, dict):
+        yield value
+        for child in value.values():
+            yield from nested_dicts(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from nested_dicts(child)
+
+
+def has_schema_type(value: dict, expected: str) -> bool:
+    declared = value.get("@type")
+    return expected in (declared if isinstance(declared, list) else [declared])
+
+
+def referenced_ids(value) -> set[str]:
+    """Return JSON-LD identifiers from a reference, inline node, or list."""
+
+    if isinstance(value, str):
+        return {value}
+    if isinstance(value, dict):
+        identifier = value.get("@id")
+        return {identifier} if isinstance(identifier, str) else set()
+    if isinstance(value, list):
+        result: set[str] = set()
+        for child in value:
+            result.update(referenced_ids(child))
+        return result
+    return set()
+
+
+def assert_absolute_web_url(test: unittest.TestCase, value, label: str) -> None:
+    test.assertIsInstance(value, str, f"{label} must be a URL string")
+    parsed = urlparse(value)
+    test.assertIn(
+        parsed.scheme,
+        {"http", "https"},
+        f"{label} must be an absolute web URL",
+    )
+    test.assertTrue(parsed.netloc, f"{label} must include a hostname")
 
 
 def tree_snapshot(root: Path) -> dict[str, bytes]:
@@ -253,6 +336,27 @@ class CatalogueBuildTests(unittest.TestCase):
             rows = list(csv.DictReader(handle))
         return parser, document, rows
 
+    def load_json_ld(self, site: Path | None = None) -> list[dict]:
+        index_html = ((site or self.site) / "index.html").read_text(encoding="utf-8")
+        parser = JSONLDHTMLParser()
+        parser.feed(index_html)
+        self.assertTrue(
+            parser.scripts,
+            "Generated static HTML must embed application/ld+json metadata",
+        )
+
+        documents: list[dict] = []
+        for index, script in enumerate(parser.scripts):
+            with self.subTest(json_ld_script=index):
+                self.assertTrue(script.strip(), "JSON-LD script must not be empty")
+                try:
+                    document = json.loads(script)
+                except json.JSONDecodeError as error:
+                    self.fail(f"JSON-LD script {index} is not valid JSON: {error}")
+                self.assertIsInstance(document, dict)
+                documents.append(document)
+        return documents
+
     def test_html_json_and_csv_have_the_same_unique_canonical_records(self) -> None:
         parser, document, rows = self.load_outputs()
         html_ids = [card["id"] for card in parser.cards]
@@ -280,7 +384,122 @@ class CatalogueBuildTests(unittest.TestCase):
         self.assertEqual(parser.summaries["location-count"], str(expected_location_count))
         expected_result = f"{expected_count} {'result' if expected_count == 1 else 'results'}"
         self.assertEqual(parser.summaries["result-count"], expected_result)
+        self.assertIn("data/measurements.json", parser.links)
         self.assertIn("data/measurements.csv", parser.links)
+
+    def test_static_json_ld_describes_the_catalogue_dataset_and_downloads(self) -> None:
+        documents = self.load_json_ld()
+        self.assertTrue(
+            any(
+                str(document.get("@context", "")).rstrip("/")
+                == "https://schema.org"
+                for document in documents
+            ),
+            "JSON-LD must declare the schema.org context",
+        )
+
+        nodes = [node for document in documents for node in nested_dicts(document)]
+        typed = {
+            schema_type: [node for node in nodes if has_schema_type(node, schema_type)]
+            for schema_type in ("Organization", "DataCatalog", "Dataset", "DataDownload")
+        }
+        self.assertEqual(len(typed["Organization"]), 1)
+        self.assertEqual(len(typed["DataCatalog"]), 1)
+        self.assertEqual(len(typed["Dataset"]), 1)
+        self.assertEqual(len(typed["DataDownload"]), 2)
+
+        organisation = typed["Organization"][0]
+        catalogue = typed["DataCatalog"][0]
+        dataset = typed["Dataset"][0]
+        downloads = typed["DataDownload"]
+
+        for label, node in {
+            "Organization": organisation,
+            "DataCatalog": catalogue,
+            "Dataset": dataset,
+        }.items():
+            assert_absolute_web_url(self, node.get("@id"), f"{label} @id")
+            assert_absolute_web_url(self, node.get("url"), f"{label} url")
+
+        self.assertEqual(catalogue["url"], PUBLIC_SITE_URL)
+        self.assertEqual(dataset["url"], PUBLIC_SITE_URL)
+        self.assertEqual(dataset["name"], "DSR SPL Reference Measurements")
+        self.assertGreaterEqual(len(dataset.get("description", "")), 50)
+        self.assertLessEqual(len(dataset.get("description", "")), 5000)
+        self.assertIn(
+            dataset["@id"],
+            referenced_ids(catalogue.get("dataset")),
+            "DataCatalog.dataset must link to the generated Dataset",
+        )
+
+        declared_distributions = dataset.get("distribution")
+        if not isinstance(declared_distributions, list):
+            declared_distributions = [declared_distributions]
+        self.assertEqual(len(declared_distributions), 2)
+        for download in downloads:
+            download_id = download.get("@id")
+            linked = any(
+                candidate is download
+                or (
+                    isinstance(candidate, dict)
+                    and isinstance(download_id, str)
+                    and candidate.get("@id") == download_id
+                )
+                for candidate in declared_distributions
+            )
+            self.assertTrue(linked, "Every DataDownload must be linked by Dataset.distribution")
+
+        expected_download_urls = {
+            f"{PUBLIC_SITE_URL}data/measurements.json": "application/json",
+            f"{PUBLIC_SITE_URL}data/measurements.csv": "text/csv",
+        }
+        actual_download_urls: dict[str, str] = {}
+        for download in downloads:
+            content_url = download.get("contentUrl")
+            assert_absolute_web_url(self, content_url, "DataDownload contentUrl")
+            self.assertIsInstance(download.get("encodingFormat"), str)
+            actual_download_urls[content_url] = download["encodingFormat"]
+            if "@id" in download:
+                assert_absolute_web_url(self, download["@id"], "DataDownload @id")
+        self.assertEqual(actual_download_urls, expected_download_urls)
+
+        timestamp_pairs = [
+            parse_rfc3339_instant(record["measurement"]["completed_at_utc"])
+            for _, record in self.canonical
+        ]
+        oldest_date = min(timestamp_pairs).date().isoformat()
+        newest_date = max(timestamp_pairs).date().isoformat()
+        self.assertEqual(
+            dataset.get("temporalCoverage"),
+            f"{oldest_date}/{newest_date}",
+        )
+
+        variable_nodes = dataset.get("variableMeasured")
+        self.assertIsInstance(variable_nodes, list)
+        self.assertEqual(len(variable_nodes), len(REQUIRED_MEASURED_VARIABLES))
+        for variable_node in variable_nodes:
+            self.assertEqual(variable_node.get("@type"), "PropertyValue")
+            self.assertIn(variable_node.get("unitText"), {"dB(A)", "dB(C)", "dB(Z)"})
+        measured_variables = json.dumps(variable_nodes, ensure_ascii=False).casefold()
+        for variable in REQUIRED_MEASURED_VARIABLES:
+            with self.subTest(variable=variable):
+                self.assertIn(variable.casefold(), measured_variables)
+
+        licences = {
+            node["license"]
+            for node in (catalogue, dataset, *downloads)
+            if "license" in node
+        }
+        self.assertEqual(licences, {CC_BY_4_0_URL})
+        self.assertEqual(dataset.get("license"), CC_BY_4_0_URL)
+        citation = (REPOSITORY_ROOT / "CITATION.cff").read_text(encoding="utf-8")
+        citation_version = re.search(r"(?m)^version:\s*(\S+)\s*$", citation)
+        citation_release = re.search(r"(?m)^date-released:\s*(\S+)\s*$", citation)
+        self.assertIsNotNone(citation_version)
+        self.assertIsNotNone(citation_release)
+        self.assertEqual(dataset.get("version"), citation_version.group(1))
+        self.assertEqual(dataset.get("datePublished"), citation_release.group(1))
+        self.assertEqual(private_keys(documents), set())
 
     def test_static_cards_and_discovery_files_expose_required_public_fields_only(self) -> None:
         parser, document, rows = self.load_outputs()
@@ -379,13 +598,14 @@ class CatalogueBuildTests(unittest.TestCase):
                     "country_code": "GB",
                     "country_name": "United & Kingdom",
                     "city": city,
-                    "latitude": 51.5,
-                    "longitude": -0.1,
+                    "latitude": 51.5123456789,
+                    "longitude": -0.123456789,
                 }
             )
             source["calibration"]["method"] = None
             source["notes"] = notes
-            source["project_name"] = "Private project"
+            source["project_name"] = "PRIVATE-PROJECT-SENTINEL"
+            source["precise_address"] = "PRIVATE-ADDRESS-SENTINEL"
             source["photo"] = {"included": False, "filename": None, "sha256": None}
             record_path = (
                 synthetic_root
@@ -423,6 +643,18 @@ class CatalogueBuildTests(unittest.TestCase):
             self.assertEqual(public_record["title"], title)
             self.assertEqual(public_record["calibration"]["method"], None)
             self.assertEqual(private_keys(document), set())
+
+            structured_documents = self.load_json_ld(synthetic_site)
+            structured_text = json.dumps(structured_documents, ensure_ascii=False)
+            self.assertEqual(private_keys(structured_documents), set())
+            for private_value in (
+                "PRIVATE-PROJECT-SENTINEL",
+                "PRIVATE-ADDRESS-SENTINEL",
+                "51.5123456789",
+                "-0.123456789",
+            ):
+                with self.subTest(private_value=private_value):
+                    self.assertNotIn(private_value, structured_text)
 
             title_case_definition = re.search(
                 r"const\s+titleCase\s*=\s*value\s*=>\s*\{(.*?)\n\};",
