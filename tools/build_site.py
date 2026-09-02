@@ -33,7 +33,22 @@ CSV = SITE / "data" / "measurements.csv"
 PHOTOS = SITE / "photos"
 TEMPLATE = SITE / "index.template.html"
 
+PUBLIC_BASE_URL = "https://directsoundrecords.github.io/spl-reference-measurements/"
+REPOSITORY_URL = "https://github.com/directsoundrecords/spl-reference-measurements"
+METHODS_URL = f"{REPOSITORY_URL}/blob/main/METHODS.md"
+LICENSE_URL = "https://creativecommons.org/licenses/by/4.0/"
+ORGANISATION_ID = "https://directsoundrecords.com/#organization"
+ORGANISATION_URL = "https://directsoundrecords.com/"
+CATALOGUE_ID = f"{PUBLIC_BASE_URL}#catalogue"
+DATASET_ID = f"{PUBLIC_BASE_URL}#dataset"
+JSON_DOWNLOAD_URL = f"{PUBLIC_BASE_URL}data/measurements.json"
+CSV_DOWNLOAD_URL = f"{PUBLIC_BASE_URL}data/measurements.csv"
+# Aggregate release metadata mirrors the repository's authoritative CITATION.cff.
+DATASET_VERSION = "1.0.0"
+DATASET_DATE_PUBLISHED = "2026-08-25"
+
 TOKENS = (
+    "{{DATASET_JSON_LD}}",
     "{{MEASUREMENT_COUNT}}",
     "{{LOCATION_COUNT}}",
     "{{RESULT_COUNT}}",
@@ -96,6 +111,126 @@ def _details_row(term: str, description: Any) -> str:
         "</dt><dd>"
         f"{_escape(description)}"
         "</dd></div>"
+    )
+
+
+def _dataset_structured_data(entries: list[CatalogueEntry]) -> str:
+    """Return script-safe schema.org metadata for the aggregate public dataset."""
+
+    dataset: dict[str, Any] = {
+        "@type": "Dataset",
+        "@id": DATASET_ID,
+        "name": "DSR SPL Reference Measurements",
+        "description": (
+            "Open, curated real-world sound-level observations contributed through "
+            "DSR SPL Reference and published by Direct Sound Records."
+        ),
+        "url": PUBLIC_BASE_URL,
+        "sameAs": REPOSITORY_URL,
+        "includedInDataCatalog": {"@id": CATALOGUE_ID},
+        "creator": {"@id": ORGANISATION_ID},
+        "publisher": {"@id": ORGANISATION_ID},
+        "license": LICENSE_URL,
+        "isAccessibleForFree": True,
+        "datePublished": DATASET_DATE_PUBLISHED,
+        "version": DATASET_VERSION,
+        "keywords": [
+            "sound-level measurements",
+            "SPL",
+            "LAeq",
+            "LAFmax",
+            "LCpeak",
+        ],
+        "measurementTechnique": METHODS_URL,
+        "variableMeasured": [
+            {
+                "@type": "PropertyValue",
+                "name": "A-weighted equivalent continuous sound level (LAeq)",
+                "unitText": "dB(A)",
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Maximum A-weighted, Fast-time-weighted sound level (LAFmax)",
+                "unitText": "dB(A)",
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Minimum A-weighted, Fast-time-weighted sound level (LAFmin)",
+                "unitText": "dB(A)",
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "C-weighted peak sound level (LCpeak)",
+                "unitText": "dB(C)",
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "C-weighted equivalent continuous sound level (LCeq)",
+                "unitText": "dB(C)",
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Z-weighted equivalent continuous sound level (LZeq)",
+                "unitText": "dB(Z)",
+            },
+        ],
+        "distribution": [
+            {
+                "@type": "DataDownload",
+                "name": "DSR SPL Reference Measurements — JSON discovery catalogue",
+                "encodingFormat": "application/json",
+                "contentUrl": JSON_DOWNLOAD_URL,
+            },
+            {
+                "@type": "DataDownload",
+                "name": "DSR SPL Reference Measurements — CSV discovery index",
+                "encodingFormat": "text/csv",
+                "contentUrl": CSV_DOWNLOAD_URL,
+            },
+        ],
+    }
+    if entries:
+        instants = [parse_rfc3339_instant(entry.completed_at) for entry in entries]
+        dataset["temporalCoverage"] = (
+            f"{min(instants).date().isoformat()}/{max(instants).date().isoformat()}"
+        )
+
+    document = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": ORGANISATION_ID,
+                "name": "Direct Sound Records",
+                "url": ORGANISATION_URL,
+            },
+            {
+                "@type": "DataCatalog",
+                "@id": CATALOGUE_ID,
+                "name": "DSR SPL Reference Public Measurement Library",
+                "description": (
+                    "The public catalogue of sound-level measurements contributed "
+                    "through DSR SPL Reference and published by Direct Sound Records."
+                ),
+                "url": PUBLIC_BASE_URL,
+                "publisher": {"@id": ORGANISATION_ID},
+                "dataset": {"@id": DATASET_ID},
+            },
+            dataset,
+        ],
+    }
+    serialized = json.dumps(
+        document,
+        indent=2,
+        ensure_ascii=False,
+        sort_keys=True,
+    )
+    return (
+        serialized.replace("<", "\\u003c")
+        .replace(">", "\\u003e")
+        .replace("&", "\\u0026")
+        .replace("\u2028", "\\u2028")
+        .replace("\u2029", "\\u2029")
     )
 
 
@@ -197,6 +332,7 @@ def _render_index(template_text: str, entries: list[CatalogueEntry]) -> str:
         cards = '<p class="empty-state">No public measurements are available yet.</p>'
     result_count = f"{measurement_count} {'result' if measurement_count == 1 else 'results'}"
     replacements = {
+        "{{DATASET_JSON_LD}}": _dataset_structured_data(entries),
         "{{MEASUREMENT_COUNT}}": str(measurement_count),
         "{{LOCATION_COUNT}}": str(location_count),
         "{{RESULT_COUNT}}": result_count,
