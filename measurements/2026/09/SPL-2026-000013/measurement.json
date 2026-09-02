@@ -1,0 +1,83 @@
+{
+  "notes": "Environmental sound pressure level measurement recorded while waiting for approximately 10 minutes on Platform 1 at City Thameslink railway station in central London.\n\nThe measurement captures the acoustic environment experienced by a passenger during a typical waiting period, including the continuous background noise of the station, ventilation and infrastructure, passenger activity, announcements, and the substantial variations in sound level produced by trains approaching, arriving, stopping, and departing from the platform.\n\nThe enclosed underground platform environment is particularly relevant to this measurement, as train noise and other transient sounds interact with the reflective surfaces and confined geometry of the station.\n\nThe approximately 10-minute measurement period provides a useful representation of real-world passenger noise exposure while waiting for a train and forms part of the SPL Reference real-world environmental dataset, allowing comparison with outdoor railway platforms, onboard train journeys, other public transport environments, and everyday urban noise.",
+  "photo": {
+    "filename": "photo.jpg",
+    "included": true,
+    "sha256": "584d071a938151612129f38e5a26767a95b2221c237414e9283a77157a1b89a9"
+  },
+  "calibration": {
+    "method": "Uncalibrated",
+    "status": "indicative"
+  },
+  "attribution": {
+    "display_name": null,
+    "organisation": null,
+    "mode": "anonymous"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "environment": {
+    "type_id": "railway_platform",
+    "group_id": "transport",
+    "taxonomy_version": "1"
+  },
+  "software": {
+    "analysis_method_version": "spl-reference-1",
+    "build": "2",
+    "application_version": "1.0",
+    "name": "DSR SPL Reference"
+  },
+  "schema_version": "1.0.0",
+  "public_location": {
+    "city": "London City",
+    "approximate_area": null,
+    "visibility": "city",
+    "region": null,
+    "country_code": "GB",
+    "place_name": null,
+    "country_name": "United Kingdom"
+  },
+  "instrument": {
+    "device_hardware_identifier": "iPhone16,1",
+    "os_version": "Version 26.6.1 (Build 23G83)",
+    "microphone_display_name": "iPhone microphone",
+    "input_path": "Built-in input",
+    "os_name": "iOS"
+  },
+  "sound_level": {
+    "lceq_db_c": 85.56687835419183,
+    "lzeq_db_z": 85.81008432096101,
+    "lafmin_db_a": 57.21552519183937,
+    "lcpeak_db_c": 109.7858733908837,
+    "laeq_db_a": 83.58961782259306,
+    "lafmax_db_a": 97.75622265002352
+  },
+  "measurement": {
+    "completed_at_utc": "2026-09-02T16:31:36Z",
+    "duration_seconds": 565.60000000006,
+    "title": "City Thameslink Station"
+  },
+  "measurement_settings": {
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ],
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ]
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000013",
+    "measurement_uuid": "6280098f-b19d-4ad5-aed7-77ea9f9a102f",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
