@@ -19,6 +19,27 @@ const attributionLabel = attribution => {
   if (attribution.mode === "anonymous") return "Anonymous";
   return [attribution.name, attribution.organisation].filter(Boolean).join(" · ") || "Attributed contributor";
 };
+const newestFirst = (a,b) => b.completedAt.localeCompare(a.completedAt);
+const levelForSort = (item,key) => {
+  const value = item.levels[key];
+  if (value == null) return null;
+  const number = Number(value);
+  return Number.isFinite(number) ? number : null;
+};
+const highestLevelFirst = key => (a,b) => {
+  const aLevel = levelForSort(a,key);
+  const bLevel = levelForSort(b,key);
+  if (aLevel == null) return bLevel == null ? newestFirst(a,b) : 1;
+  if (bLevel == null) return -1;
+  return bLevel-aLevel || newestFirst(a,b);
+};
+const sortComparators = {
+  newest:newestFirst,
+  oldest:(a,b) => a.completedAt.localeCompare(b.completedAt),
+  loudest:highestLevelFirst("laeq"),
+  lafmax:highestLevelFirst("lafmax"),
+  lcpeak:highestLevelFirst("lcpeak")
+};
 
 function detailsRow(term, description) {
   const wrapper = document.createElement("div");
@@ -79,7 +100,7 @@ function render() {
   const environment = environmentFilter.value;
   const order = sort.value;
   const filtered = measurements.filter(item => (!query || item._search.includes(query)) && (!environment || item.environmentGroup === environment));
-  filtered.sort((a,b) => order === "loudest" ? b.levels.laeq-a.levels.laeq : order === "oldest" ? a.completedAt.localeCompare(b.completedAt) : b.completedAt.localeCompare(a.completedAt));
+  filtered.sort(sortComparators[order] || newestFirst);
   list.replaceChildren(...filtered.map(renderCard));
   document.querySelector("#result-count").textContent = `${filtered.length} ${filtered.length === 1 ? "result" : "results"}`;
   document.querySelector("#empty-state").hidden = filtered.length !== 0;
