@@ -9,6 +9,7 @@
   <meta property="og:description" content="A transparent, open catalogue of contributed sound-level measurements.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://directsoundrecords.github.io/spl-reference-measurements/">
+  <link rel="canonical" href="https://directsoundrecords.github.io/spl-reference-measurements/">
   <title>SPL Reference Public Measurement Library</title>
   <link rel="stylesheet" href="assets/styles.css">
   <script src="assets/app.js" defer></script>
@@ -31,8 +32,8 @@
       <p class="intro">Explore sound-level measurements shared by the community. Every entry links to its complete public record for transparent review.</p>
     </div>
     <dl class="summary" aria-label="Catalogue summary">
-      <div><dt>Measurements</dt><dd id="measurement-count">—</dd></div>
-      <div><dt>Public locations</dt><dd id="location-count">—</dd></div>
+      <div><dt>Measurements</dt><dd id="measurement-count">{{MEASUREMENT_COUNT}}</dd></div>
+      <div><dt>Public locations</dt><dd id="location-count">{{LOCATION_COUNT}}</dd></div>
       <div><dt>Data licence</dt><dd>CC BY 4.0</dd></div>
     </dl>
   </header>
@@ -41,15 +42,15 @@
     <section class="controls" aria-label="Filter measurements">
       <label class="search-field">
         <span>Search measurements</span>
-        <input id="search" type="search" placeholder="Title, city, country or reference" autocomplete="off">
+        <input id="search" type="search" placeholder="Title, city, country or reference" autocomplete="off" disabled>
       </label>
       <label>
         <span>Environment</span>
-        <select id="environment-filter"><option value="">All environments</option></select>
+        <select id="environment-filter" disabled><option value="">All environments</option></select>
       </label>
       <label>
         <span>Sort</span>
-        <select id="sort">
+        <select id="sort" disabled>
           <option value="newest">Newest first</option>
           <option value="oldest">Oldest first</option>
           <option value="loudest">Highest LAeq</option>
@@ -58,14 +59,17 @@
         </select>
       </label>
     </section>
+    <noscript>
+      <p class="empty-state">Interactive filters require JavaScript. All published measurements are listed below, and each public record remains available.</p>
+    </noscript>
+    <p id="error-state" class="empty-state" role="status" hidden>Interactive filters are unavailable right now. The measurements shown below remain available, and each public record can still be opened.</p>
 
     <div class="results-heading">
       <h2>Measurements</h2>
-      <p id="result-count" aria-live="polite"></p>
+      <p id="result-count" aria-live="polite">{{RESULT_COUNT}}</p>
     </div>
-    <section id="measurement-list" class="measurement-grid" aria-busy="true"></section>
-    <p id="empty-state" class="empty-state" hidden>No measurements match those filters.</p>
-    <p id="error-state" class="empty-state" hidden>The catalogue could not be loaded. The source records remain available on GitHub.</p>
+    <section id="measurement-list" class="measurement-grid" aria-busy="false">{{MEASUREMENT_CARDS}}</section>
+    <p id="empty-state" class="empty-state" aria-live="polite" hidden>No measurements match those filters.</p>
   </main>
 
   <footer>

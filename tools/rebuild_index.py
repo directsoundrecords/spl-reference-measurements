@@ -1,9 +1,43 @@
 #!/usr/bin/env python3
-import csv,json,sys
+"""Build the CSV discovery index from canonical measurement records."""
+
+from __future__ import annotations
+
+import sys
 from pathlib import Path
-root=Path(__file__).resolve().parents[1]; destination=Path(sys.argv[1]) if len(sys.argv)>1 else root/"docs/data/measurements.csv"; columns="public_measurement_id measurement_uuid date environment_group environment_type country region city location_visibility laeq_db_a lafmax_db_a duration_seconds quality_classification attribution_mode app_version record_path".split(); rows=[]
-for path in root.glob("measurements/*/*/SPL-*/measurement.json"):
- d=json.loads(path.read_text());i=d["identity"];m=d["measurement"];e=d["environment"];l=d["public_location"];s=d["sound_level"]
- rows.append(dict(zip(columns,[i["public_measurement_id"],i["measurement_uuid"],m["completed_at_utc"][:10],e["group_id"],e["type_id"],l.get("country_name"),l.get("region"),l.get("city"),l["visibility"],s["laeq_db_a"],s["lafmax_db_a"],m["duration_seconds"],d["measurement_quality"]["classification"],d["attribution"]["mode"],d["software"]["application_version"],str(path.relative_to(root))])))
-destination.parent.mkdir(parents=True,exist_ok=True)
-with destination.open("w",newline="") as f:w=csv.DictWriter(f,fieldnames=columns,lineterminator="\n");w.writeheader();w.writerows(sorted(rows,key=lambda r:r["public_measurement_id"]))
+from typing import Sequence
+
+try:  # Support both ``python tools/rebuild_index.py`` and package imports.
+    from .catalogue import CatalogueEntry, load_catalogue, write_csv
+except ImportError:  # pragma: no cover - exercised by the script entry point.
+    from catalogue import CatalogueEntry, load_catalogue, write_csv
+
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def rebuild_index(
+    root: Path | str | None = None,
+    destination: Path | str | None = None,
+) -> list[CatalogueEntry]:
+    root_path = Path(root) if root is not None else ROOT
+    destination_path = (
+        Path(destination)
+        if destination is not None
+        else root_path / "docs" / "data" / "measurements.csv"
+    )
+    entries = load_catalogue(root_path)
+    write_csv(entries, destination_path)
+    return entries
+
+
+def main(argv: Sequence[str] | None = None) -> None:
+    arguments = list(sys.argv[1:] if argv is None else argv)
+    if len(arguments) > 1:
+        raise SystemExit("usage: rebuild_index.py [destination]")
+    destination = Path(arguments[0]) if arguments else None
+    rebuild_index(destination=destination)
+
+
+if __name__ == "__main__":
+    main()
