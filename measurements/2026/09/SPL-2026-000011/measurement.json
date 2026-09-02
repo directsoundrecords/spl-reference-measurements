@@ -1,0 +1,83 @@
+{
+  "environment": {
+    "group_id": "transport",
+    "type_id": "train",
+    "taxonomy_version": "1"
+  },
+  "calibration": {
+    "status": "device_calibrated",
+    "method": "Calibrated"
+  },
+  "schema_version": "1.0.0",
+  "instrument": {
+    "device_hardware_identifier": "iPhone16,1",
+    "os_name": "iOS",
+    "microphone_display_name": "Dayton",
+    "input_path": "Built-in input",
+    "os_version": "Version 26.6.1 (Build 23G83)"
+  },
+  "notes": "Environmental sound pressure level measurement recorded during a typical passenger journey aboard a Thameslink train travelling from Norwood Junction to London Bridge.\n\nThe measurement captures the changing acoustic environment experienced inside the passenger carriage throughout the journey, including acceleration and braking, continuous rolling and rail noise, track and wheel interaction, changes in speed, station approaches, and the transition from the suburban rail network towards central London.\n\nRather than representing a controlled acoustic test, this recording documents real-world passenger noise exposure during everyday public transport. It provides a reference for comparing typical and peak sound levels encountered during rail travel with measurements collected in other transport systems, public spaces, urban environments, and everyday listening situations.",
+  "public_location": {
+    "approximate_area": "South London",
+    "city": "London",
+    "country_name": "United Kingdom",
+    "visibility": "approximate_area",
+    "place_name": null,
+    "country_code": "GB",
+    "region": null
+  },
+  "attribution": {
+    "display_name": null,
+    "organisation": null,
+    "mode": "anonymous"
+  },
+  "software": {
+    "build": "2",
+    "application_version": "1.0",
+    "analysis_method_version": "spl-reference-1",
+    "name": "DSR SPL Reference"
+  },
+  "photo": {
+    "included": true,
+    "sha256": "247fe3fd8de02d09dd6636d53296978470c96106748083aaf818d9c866f3d5a2",
+    "filename": "photo.jpg"
+  },
+  "measurement": {
+    "completed_at_utc": "2026-09-02T08:10:34Z",
+    "title": "Thameslink Journey - Norwood Junction to London Bridge",
+    "duration_seconds": 736.4000000000989
+  },
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "sound_level": {
+    "lafmax_db_a": 94.86114709054223,
+    "lafmin_db_a": 60.311068717172546,
+    "lcpeak_db_c": 108.15081083026507,
+    "laeq_db_a": 67.67857823135645,
+    "lzeq_db_z": 85.99990213155607,
+    "lceq_db_c": 81.7381403422541
+  },
+  "measurement_quality": {
+    "classification": "device_calibrated"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000011",
+    "measurement_uuid": "4f9b3c2c-2be9-40c9-8282-b9e3c0cf6dd8",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
