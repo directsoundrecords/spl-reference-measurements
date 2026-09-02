@@ -12,8 +12,10 @@ for path in records:
  if validator:
   for issue in validator.iter_errors(d):errors.append(f"{path}: schema: {issue.message}")
  if mid!=path.parent.name or not re.fullmatch(r"SPL-\d{4}-\d{6}",str(mid)):errors.append(f"{path}: public ID/path mismatch")
- if uid in uuids:errors.append(f"duplicate UUID {uid}");uuids.add(uid)
- if mid in ids:errors.append(f"duplicate public ID {mid}");ids.add(mid)
+ if uid in uuids:errors.append(f"duplicate UUID {uid}")
+ uuids.add(uid)
+ if mid in ids:errors.append(f"duplicate public ID {mid}")
+ ids.add(mid)
  if any(x in text for x in ['"latitude"','"longitude"','"coordinates"','"project_id"','"project_name"']):errors.append(f"{path}: prohibited private field")
  e=d.get("environment",{});
  if (e.get("group_id"),e.get("type_id")) not in pairs or e.get("taxonomy_version")!="1":errors.append(f"{path}: invalid environment")
