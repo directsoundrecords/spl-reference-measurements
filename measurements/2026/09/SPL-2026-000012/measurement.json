@@ -1,0 +1,83 @@
+{
+  "measurement_quality": {
+    "classification": "device_calibrated"
+  },
+  "attribution": {
+    "display_name": null,
+    "organisation": null,
+    "mode": "anonymous"
+  },
+  "sound_level": {
+    "laeq_db_a": 78.18032362967574,
+    "lzeq_db_z": 84.05953059256913,
+    "lafmin_db_a": 47.216412788934065,
+    "lcpeak_db_c": 110.3322489045438,
+    "lafmax_db_a": 95.99827564324008,
+    "lceq_db_c": 82.6785767685592
+  },
+  "notes": "Environmental sound pressure level measurement recorded while seated on a bench on Platform 3 at Norwood Junction railway station, while waiting for a train.\n\nThe measurement captures the everyday acoustic environment experienced by a passenger on the platform, including background station ambience, nearby rail activity, arriving and departing trains, announcements, passenger activity, and intermittent changes in sound level associated with trains moving through or around the station.\n\nUnlike an onboard measurement, this recording documents stationary noise exposure in an active railway environment, where relatively quiet background periods can be interrupted by much louder short-duration events.\n\nThe measurement forms part of the SPL Reference real-world environmental dataset, providing a reference for comparing railway-platform noise with onboard transport, urban environments, public spaces, workplaces, and other everyday sound environments.",
+  "public_location": {
+    "place_name": null,
+    "city": "South Norwood",
+    "country_name": "United Kingdom",
+    "country_code": "GB",
+    "approximate_area": null,
+    "visibility": "city",
+    "region": null
+  },
+  "measurement_settings": {
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ],
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ]
+  },
+  "measurement": {
+    "title": "Norwood Junction Train Station",
+    "completed_at_utc": "2026-09-02T07:53:05Z",
+    "duration_seconds": 278.59999999999485
+  },
+  "instrument": {
+    "microphone_display_name": "Dayton",
+    "input_path": "Built-in input",
+    "device_hardware_identifier": "iPhone16,1",
+    "os_name": "iOS",
+    "os_version": "Version 26.6.1 (Build 23G83)"
+  },
+  "environment": {
+    "taxonomy_version": "1",
+    "type_id": "railway_platform",
+    "group_id": "transport"
+  },
+  "calibration": {
+    "status": "device_calibrated",
+    "method": "Calibrated"
+  },
+  "photo": {
+    "filename": "photo.jpg",
+    "included": true,
+    "sha256": "8b16b64c9f247ca2120247c52d51783ef9e417c6ab1ef3c48c4161cb099b3250"
+  },
+  "software": {
+    "analysis_method_version": "spl-reference-1",
+    "build": "2",
+    "application_version": "1.0",
+    "name": "DSR SPL Reference"
+  },
+  "schema_version": "1.0.0",
+  "identity": {
+    "public_measurement_id": "SPL-2026-000012",
+    "measurement_uuid": "39036c54-8add-42e0-9eda-09d18bae2356",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
