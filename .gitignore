@@ -1,1 +1,6 @@
+__pycache__/
+*.py[cod]
+docs/index.html
+docs/data/measurements.json
 docs/data/measurements.csv
+docs/photos/

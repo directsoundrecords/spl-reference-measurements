@@ -35,6 +35,7 @@ label > span { display: block; color: var(--muted); font-size: .78rem; font-weig
 input,select { width: 100%; appearance: none; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); color: var(--ink); font: inherit; padding: 14px 15px; min-height: 50px; }
 select { background-image: linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%); background-position: calc(100% - 18px) 21px,calc(100% - 12px) 21px; background-size: 6px 6px; background-repeat: no-repeat; padding-right: 34px; }
 input:focus,select:focus { outline: 2px solid var(--copper); outline-offset: 2px; }
+input:disabled,select:disabled { opacity: .7; cursor: not-allowed; }
 .results-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 15px; margin: 52px 0 20px; }
 h2 { font-size: 1.7rem; margin: 0; }
 .results-heading p { color: var(--muted); margin: 0; }

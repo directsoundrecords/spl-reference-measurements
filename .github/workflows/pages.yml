@@ -6,9 +6,12 @@ on:
     paths:
       - "docs/**"
       - "measurements/**"
-      - "tools/build_site.py"
-      - "tools/rebuild_index.py"
-      - ".github/workflows/pages.yml"
+      - "registry/**"
+      - "tools/**"
+      - "tests/**"
+      - "schemas/**"
+      - "taxonomy/**"
+      - ".github/workflows/**"
   workflow_dispatch:
 
 permissions:
@@ -31,8 +34,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python tools/build_site.py
-      - run: python tools/rebuild_index.py docs/data/measurements.csv
+      - run: pip install jsonschema Pillow
+      - name: Validate canonical measurements
+        run: python tools/validate_measurement.py
+      - name: Test catalogue generation contracts
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Check catalogue JavaScript syntax
+        run: node --check docs/assets/app.js
+      - name: Build static HTML, JSON, CSV and photographs
+        run: python tools/build_site.py
       - uses: actions/configure-pages@v5
         with:
           enablement: true
