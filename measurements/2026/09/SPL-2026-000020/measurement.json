@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "photo": {
+    "sha256": "6c898b90418c39652f86c4adfc4bbe3287e4462014b9ca20fc8eb6adb3d8333e",
+    "included": true,
+    "filename": "photo.jpg"
+  },
+  "public_location": {
+    "region": null,
+    "city": "London",
+    "place_name": null,
+    "country_code": "GB",
+    "approximate_area": null,
+    "country_name": "United Kingdom",
+    "visibility": "city"
+  },
+  "measurement": {
+    "duration_seconds": 260.3999999999907,
+    "title": "Whitehorse Meadow",
+    "completed_at_utc": "2026-09-03T19:01:18Z"
+  },
+  "measurement_settings": {
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ],
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ]
+  },
+  "notes": "Evening Walk — Whitehorse Meadow, London, UK\nEnvironmental sound pressure level measurement recorded during an evening walk across Whitehorse Meadow at approximately 8 PM.\nThe measurement captures the changing sound environment experienced while walking through an open urban green space, including the natural background ambience, footsteps and movement, distant road traffic, occasional voices and other human activity, birds and other wildlife, wind and vegetation, and intermittent sounds originating from the surrounding residential and urban environment.\nUnlike a measurement taken from a fixed position, this recording documents sound exposure while moving through the environment. As the walking route changes the distance and orientation relative to individual sound sources, the measurement provides a representation of the acoustic experience of crossing the park rather than the sound level of one specific location within it.\nThe measurement forms part of the SPL Reference real-world environmental dataset, providing a useful quieter outdoor reference for comparison with streets, railway stations, public transport, workplaces, indoor environments and other everyday soundscapes.",
+  "measurement_quality": {
+    "classification": "device_calibrated"
+  },
+  "environment": {
+    "type_id": "urban_park",
+    "group_id": "nature_outdoors",
+    "taxonomy_version": "1"
+  },
+  "software": {
+    "analysis_method_version": "spl-reference-1",
+    "application_version": "1.0",
+    "name": "DSR SPL Reference",
+    "build": "2"
+  },
+  "sound_level": {
+    "lafmax_db_a": 78.17227318507514,
+    "lafmin_db_a": 42.74038813467129,
+    "lceq_db_c": 77.04443229573357,
+    "lcpeak_db_c": 108.14782080565843,
+    "laeq_db_a": 59.684875237461824,
+    "lzeq_db_z": 79.78214524844812
+  },
+  "instrument": {
+    "input_path": "Built-in input",
+    "device_hardware_identifier": "iPhone16,1",
+    "os_name": "iOS",
+    "os_version": "Version 26.6.1 (Build 23G83)",
+    "microphone_display_name": "Dayton"
+  },
+  "calibration": {
+    "status": "device_calibrated",
+    "method": "Calibrated"
+  },
+  "attribution": {
+    "organisation": null,
+    "mode": "name",
+    "display_name": "Alex"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000020",
+    "measurement_uuid": "b26f8a8f-a1c5-458b-afb7-3e602c100563",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
