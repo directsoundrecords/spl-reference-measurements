@@ -1,0 +1,83 @@
+{
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "public_location": {
+    "approximate_area": "Office",
+    "city": "London",
+    "place_name": null,
+    "visibility": "approximate_area",
+    "country_name": "United Kingdom",
+    "region": "City Of London",
+    "country_code": "GB"
+  },
+  "attribution": {
+    "organisation": null,
+    "mode": "anonymous",
+    "display_name": null
+  },
+  "environment": {
+    "type_id": "open_plan_office",
+    "group_id": "office_work",
+    "taxonomy_version": "1"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "instrument": {
+    "microphone_display_name": "iPhone microphone",
+    "os_version": "Version 26.6.1 (Build 23G83)",
+    "device_hardware_identifier": "iPhone16,1",
+    "input_path": "Built-in input",
+    "os_name": "iOS"
+  },
+  "schema_version": "1.0.0",
+  "photo": {
+    "included": true,
+    "filename": "photo.jpg",
+    "sha256": "3dcedb7bfce87dde8f24685fa0a28e1fb3390a116b581ac8337bb1205c5d5e11"
+  },
+  "notes": "How Loud Is a Fire Alarm Test?\n\nFire alarms are designed to be impossible to ignore. But how loud is one when you are actually standing in the building?\n\nThis SPL Reference measurement captures a routine fire alarm test in a real indoor environment, recording both the alarm itself and the surrounding sound before and during its activation.\n\nThe result provides a real-world reference for the sound level and short-term exposure produced by an emergency warning system, rather than a laboratory measurement of the alarm device.",
+  "sound_level": {
+    "lafmax_db_a": 95.13858283797038,
+    "lzeq_db_z": 84.0298891768015,
+    "laeq_db_a": 85.1852817110605,
+    "lcpeak_db_c": 105.93551620372196,
+    "lafmin_db_a": 47.203498684860165,
+    "lceq_db_c": 83.84598866788781
+  },
+  "software": {
+    "application_version": "1.0",
+    "analysis_method_version": "spl-reference-1",
+    "name": "DSR SPL Reference",
+    "build": "2"
+  },
+  "measurement": {
+    "title": "Office Fire alarm",
+    "duration_seconds": 66.4000000000005,
+    "completed_at_utc": "2026-09-04T09:59:26Z"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000021",
+    "measurement_uuid": "098b915a-4395-4261-bf91-851dbe7cdb4d",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
