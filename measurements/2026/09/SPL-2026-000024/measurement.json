@@ -1,0 +1,83 @@
+{
+  "instrument": {
+    "os_version": "Version 26.6.1 (Build 23G83)",
+    "microphone_display_name": "iPhone microphone",
+    "os_name": "iOS",
+    "device_hardware_identifier": "iPhone16,1",
+    "input_path": "Built-in input"
+  },
+  "sound_level": {
+    "lafmax_db_a": 95.97707118369203,
+    "lcpeak_db_c": 113.9414981121321,
+    "lzeq_db_z": 76.10043920595712,
+    "lafmin_db_a": 56.893716025078504,
+    "lceq_db_c": 75.73962102224851,
+    "laeq_db_a": 70.4742668062836
+  },
+  "public_location": {
+    "place_name": null,
+    "visibility": "city",
+    "approximate_area": null,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "region": null,
+    "city": "London"
+  },
+  "attribution": {
+    "display_name": "Michelangelo Canonico",
+    "organisation": null,
+    "mode": "name"
+  },
+  "notes": "A beautiful coffee shop, a relaxed conversation and some background music — how quiet is “quiet” when we actually measure it?\nThis measurement captures a pleasantly calm café environment during a conversation. Music plays softly in the background, with a noticeable bass presence, while the coffee machine and occasional sounds from customers and the surrounding space create brief changes in level.\nAn interesting example of how a place can feel quiet and comfortable even when its soundscape is far from silent.",
+  "photo": {
+    "included": true,
+    "sha256": "53253ba7219300834ec554349dc6db320b2d053a9f349871529c151875da1d03",
+    "filename": "photo.jpg"
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "software": {
+    "name": "DSR SPL Reference",
+    "analysis_method_version": "spl-reference-1",
+    "application_version": "1.0",
+    "build": "2"
+  },
+  "schema_version": "1.0.0",
+  "measurement": {
+    "title": "Surprisingly Quiet Coffee Shop",
+    "duration_seconds": 2165.1999999991262,
+    "completed_at_utc": "2026-09-04T12:05:37Z"
+  },
+  "environment": {
+    "type_id": "coffee_shop",
+    "taxonomy_version": "1",
+    "group_id": "food_drink"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000024",
+    "measurement_uuid": "30d2a4c5-9dca-4f45-81c3-6a77501ff23f",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
