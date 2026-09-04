@@ -1,0 +1,83 @@
+{
+  "notes": "A normal lunch break with two colleagues in a busy company canteen. No particularly loud event, no machinery dominating the room, no obvious source of excessive noise — just the usual combination of conversations, movement, cutlery and the constant background of a shared dining space.\nAnd yet, the overall sound environment felt surprisingly uncomfortable.\nThis SPL Reference measurement captures an interesting aspect of everyday noise exposure: sometimes it is not a single loud event that matters, but the continuous accumulation of many ordinary sounds happening at the same time.",
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "attribution": {
+    "mode": "anonymous",
+    "organisation": null,
+    "display_name": null
+  },
+  "calibration": {
+    "method": "Uncalibrated",
+    "status": "indicative"
+  },
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "environment": {
+    "type_id": "canteen",
+    "group_id": "food_drink",
+    "taxonomy_version": "1"
+  },
+  "photo": {
+    "included": false,
+    "filename": null,
+    "sha256": null
+  },
+  "public_location": {
+    "region": null,
+    "country_code": "GB",
+    "approximate_area": "Saint Paul Cathedral",
+    "city": "London",
+    "place_name": null,
+    "visibility": "approximate_area",
+    "country_name": "United Kingdom"
+  },
+  "instrument": {
+    "os_name": "iOS",
+    "device_hardware_identifier": "iPhone16,1",
+    "os_version": "Version 26.6.1 (Build 23G83)",
+    "input_path": "Built-in input",
+    "microphone_display_name": "iPhone microphone"
+  },
+  "schema_version": "1.0.0",
+  "measurement": {
+    "title": "Quick Lunch In The Canteen",
+    "completed_at_utc": "2026-09-04T11:45:07Z",
+    "duration_seconds": 871.0000000001295
+  },
+  "sound_level": {
+    "laeq_db_a": 84.0392495470152,
+    "lceq_db_c": 85.6766197628079,
+    "lcpeak_db_c": 112.18725938994407,
+    "lzeq_db_z": 85.74451477910446,
+    "lafmin_db_a": 63.65188959004594,
+    "lafmax_db_a": 99.51230097406113
+  },
+  "software": {
+    "name": "DSR SPL Reference",
+    "build": "2",
+    "application_version": "1.0",
+    "analysis_method_version": "spl-reference-1"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000025",
+    "measurement_uuid": "5b0e3884-8ecd-4487-b60f-8fd1842a11bf",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
