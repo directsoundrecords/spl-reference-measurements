@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "instrument": {
+    "input_path": "Built-in input",
+    "os_version": "Version 26.6.1 (Build 23G83)",
+    "os_name": "iOS",
+    "device_hardware_identifier": "iPhone16,1",
+    "microphone_display_name": "iPhone microphone"
+  },
+  "photo": {
+    "sha256": "24bff22e053770736a14c8a7a934c5306e0da0920c843ad98484ccb040a35c95",
+    "filename": "photo.jpg",
+    "included": true
+  },
+  "attribution": {
+    "organisation": null,
+    "mode": "name",
+    "display_name": "John Brown"
+  },
+  "environment": {
+    "taxonomy_version": "1",
+    "group_id": "streets_roads",
+    "type_id": "pedestrian_street"
+  },
+  "sound_level": {
+    "lzeq_db_z": 87.08725723991883,
+    "lafmin_db_a": 62.85503399057663,
+    "lcpeak_db_c": 115.41225006073209,
+    "lceq_db_c": 86.28208427724394,
+    "lafmax_db_a": 90.82881666290675,
+    "laeq_db_a": 75.64513147799721
+  },
+  "measurement": {
+    "title": "A Short Walk Around St Paul’s — London",
+    "completed_at_utc": "2026-09-04T15:28:12Z",
+    "duration_seconds": 78.29999999999983
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "public_location": {
+    "country_name": "United Kingdom",
+    "visibility": "city",
+    "region": null,
+    "approximate_area": null,
+    "city": "London",
+    "country_code": "GB",
+    "place_name": null
+  },
+  "notes": "What does central London actually sound like when you simply walk through it?\nThis short SPL Reference measurement captures a walk around St Paul’s, where traffic, pedestrians, voices and the wider urban background continuously overlap and change as you move through the area.\nRather than measuring a single noise source, it records the acoustic experience of moving through one of London’s busiest urban environments — a brief snapshot of the sound levels that form part of everyday city life.",
+  "software": {
+    "application_version": "1.0",
+    "analysis_method_version": "spl-reference-1",
+    "build": "2",
+    "name": "DSR SPL Reference"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000023",
+    "measurement_uuid": "0591f8ca-0830-469f-99e4-f577b7275522",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
