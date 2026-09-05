@@ -115,3 +115,7 @@ footer p { max-width: 650px; line-height: 1.55; }
   .measurement-card { transition: border-color .2s,transform .2s; }
   .measurement-card:hover { border-color: #44505d; transform: translateY(-2px); }
 }
+
+/* Keep the measurements navigation readable at narrow widths. */
+.hero nav,.hero .nav-links { flex-wrap: wrap; }
+.hero .brand-mark { flex-shrink: 0; }
