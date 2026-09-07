@@ -1,0 +1,83 @@
+{
+  "instrument": {
+    "device_hardware_identifier": "iPhone16,1",
+    "os_version": "Version 26.6.1 (Build 23G83)",
+    "microphone_display_name": "iPhone microphone",
+    "input_path": "Built-in input",
+    "os_name": "iOS"
+  },
+  "calibration": {
+    "method": "Uncalibrated",
+    "status": "indicative"
+  },
+  "measurement": {
+    "title": "Setting Up a scaffold In The City",
+    "duration_seconds": 49.40000000000043,
+    "completed_at_utc": "2026-09-07T12:29:09Z"
+  },
+  "public_location": {
+    "city": "City Of London",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "approximate_area": null,
+    "visibility": "city",
+    "place_name": null,
+    "region": null
+  },
+  "attribution": {
+    "organisation": null,
+    "mode": "name",
+    "display_name": "Michelangelo Canonico"
+  },
+  "schema_version": "1.0.0",
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "software": {
+    "application_version": "1.0",
+    "name": "DSR SPL Reference",
+    "build": "2",
+    "analysis_method_version": "spl-reference-1"
+  },
+  "notes": "How Loud Is Setting Up a Scaffold?\n\nIt is an everyday sight on a city street — but how much noise does building a scaffold actually generate?\n\nThis SPL Reference measurement captures workers assembling scaffolding alongside an urban road. Metal poles and fittings being moved, positioned and struck create repeated sharp impacts, mixed with traffic and the normal background of the city.\n\nWhat makes this sound particularly noticeable is not necessarily a continuous high level, but the succession of sudden metallic peaks interrupting the surrounding ambience.\n\nA good example of how an ordinary urban activity can temporarily transform the acoustic character of a street.\n\nEnvironment: Urban street\nActivity: Scaffold assembly\nSoundscape: Metallic impacts, construction activity and road traffic\nMeasurement type: Real-world urban / construction noise",
+  "measurement_settings": {
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ],
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ]
+  },
+  "photo": {
+    "filename": "photo.jpg",
+    "sha256": "750cc41b8910516b522f38f7689027213e6d89c99e469cf7c6862320b7212cd0",
+    "included": true
+  },
+  "sound_level": {
+    "lceq_db_c": 80.91553204280723,
+    "lafmax_db_a": 93.85827127488571,
+    "lzeq_db_z": 81.53215743406976,
+    "lafmin_db_a": 64.63197920868708,
+    "lcpeak_db_c": 105.60921167429503,
+    "laeq_db_a": 80.87714086403099
+  },
+  "environment": {
+    "group_id": "construction",
+    "type_id": "building_construction",
+    "taxonomy_version": "1"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000027",
+    "measurement_uuid": "c1fc409a-fcd2-449a-a816-8cf0d15e0104",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
