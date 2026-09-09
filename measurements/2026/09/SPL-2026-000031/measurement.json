@@ -1,0 +1,83 @@
+{
+  "sound_level": {
+    "lzeq_db_z": 85.16025427706553,
+    "lceq_db_c": 84.64990595940903,
+    "lafmin_db_a": 58.27002205551662,
+    "laeq_db_a": 78.68453864292715,
+    "lcpeak_db_c": 102.56509167164114,
+    "lafmax_db_a": 89.11537406938797
+  },
+  "environment": {
+    "taxonomy_version": "1",
+    "type_id": "hifi_listening_room",
+    "group_id": "music_nightlife"
+  },
+  "instrument": {
+    "os_version": "Version 26.6.1 (Build 23G83)",
+    "input_path": "Built-in input",
+    "os_name": "iOS",
+    "microphone_display_name": "iPhone microphone",
+    "device_hardware_identifier": "iPhone16,1"
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "measurement_settings": {
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ],
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ]
+  },
+  "schema_version": "1.0.0",
+  "software": {
+    "name": "DSR SPL Reference",
+    "build": "2",
+    "application_version": "1.0",
+    "analysis_method_version": "spl-reference-1"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "measurement": {
+    "duration_seconds": 577.4000000000627,
+    "title": "Measure 012",
+    "completed_at_utc": "2026-09-09T16:39:10Z"
+  },
+  "photo": {
+    "sha256": "a7c06deb5036258afb6a3834178a435b754d65917322bb18ed07cc2fa5aaf1cd",
+    "filename": "photo.jpg",
+    "included": true
+  },
+  "public_location": {
+    "country_code": null,
+    "visibility": "none",
+    "country_name": null,
+    "city": null,
+    "place_name": null,
+    "approximate_area": null,
+    "region": null
+  },
+  "notes": "A high-quality Hi-Fi system can make music feel remarkably present — but how loud are we actually listening when we turn the volume up for a truly involving experience?\nThis measurement was taken during a listening session of Charlie Haden’s The Montreal Tapes: with Paul Bley and Paul Motian at a deliberately high playback level. The result was powerful and engaging, although still below the level I would consider realistic for recreating the scale and dynamics of a live performance.\nBeyond evaluating the system, this measurement asks a different question: what level of sound exposure are we accumulating during serious music listening? SPL, listening duration and musical dynamics all matter when considering exposure; a short peak and an hour spent listening at an elevated average level are very different things.\nFor DSR, this is where Hi-Fi and measurement meet: not simply asking whether a system sounds good, but measuring the conditions under which we experience it. The same approach extends across playback setup, resonance, speed, vibration, room behaviour and acoustic level — turning subjective listening observations into something that can also be documented and compared.\nSource: Eversolo A6 - HiRes 192KHz\nPreamplifier: Audio Research SP20\nPower Amplifiers: Manley Snapper\nSpeakers: Proac D28",
+  "attribution": {
+    "mode": "anonymous",
+    "display_name": null,
+    "organisation": null
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000031",
+    "measurement_uuid": "2ff0a298-295a-4564-ade8-bc49ba7a1a7e",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
