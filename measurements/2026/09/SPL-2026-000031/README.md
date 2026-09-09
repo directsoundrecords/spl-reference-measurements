@@ -1,6 +1,6 @@
 # SPL-2026-000031
 
-Measure 012
+How Loud Is an Involving Hi-Fi Listening Session?
 
 - Completed: 2026-09-09T16:39:10Z
 - LAeq: 78.68453864292715 dBA
