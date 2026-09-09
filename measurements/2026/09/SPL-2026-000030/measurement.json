@@ -1,0 +1,83 @@
+{
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "photo": {
+    "filename": "photo.jpg",
+    "included": true,
+    "sha256": "52ce0abf93030ae18c4091f4406a37cf6476c0031716c83e0148cdd159c37fac"
+  },
+  "measurement_quality": {
+    "classification": "device_calibrated"
+  },
+  "environment": {
+    "type_id": "urban_street",
+    "taxonomy_version": "1",
+    "group_id": "streets_roads"
+  },
+  "sound_level": {
+    "lafmax_db_a": 90.45273386848089,
+    "laeq_db_a": 71.860979357704,
+    "lceq_db_c": 83.19964908661876,
+    "lafmin_db_a": 57.49930935227955,
+    "lcpeak_db_c": 114.12992000202394,
+    "lzeq_db_z": 85.12779469867499
+  },
+  "public_location": {
+    "country_code": "GB",
+    "place_name": null,
+    "visibility": "city",
+    "country_name": "United Kingdom",
+    "approximate_area": null,
+    "region": null,
+    "city": "London"
+  },
+  "calibration": {
+    "method": "Calibrated",
+    "status": "device_calibrated"
+  },
+  "attribution": {
+    "display_name": "Michelangelo Canonico",
+    "mode": "name",
+    "organisation": null
+  },
+  "instrument": {
+    "os_name": "iOS",
+    "input_path": "Built-in input",
+    "os_version": "Version 26.6.1 (Build 23G83)",
+    "microphone_display_name": "Dayton",
+    "device_hardware_identifier": "iPhone16,1"
+  },
+  "schema_version": "1.0.0",
+  "software": {
+    "build": "2",
+    "analysis_method_version": "spl-reference-1",
+    "name": "DSR SPL Reference",
+    "application_version": "1.0"
+  },
+  "notes": "An 11-minute walk from St Paul’s to Monument on an unusually quiet day.\nEven in the heart of London, the soundscape isn’t always dominated by noise. Footsteps, distant traffic, occasional voices and passing activity come and go as the route moves through different streets.\nThis measurement captures something easily overlooked: the quieter side of a major city, and how its sound changes simply by walking through it.",
+  "measurement": {
+    "completed_at_utc": "2026-09-09T14:17:07Z",
+    "title": "Walk Between Saint Paul And monument (quite)",
+    "duration_seconds": 671.7000000000842
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000030",
+    "measurement_uuid": "c641b788-bf13-4798-a211-178d37bb5d0c",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
