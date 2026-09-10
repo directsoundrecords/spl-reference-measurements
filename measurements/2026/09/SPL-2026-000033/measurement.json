@@ -1,0 +1,83 @@
+{
+  "instrument": {
+    "input_path": "Built-in input",
+    "device_hardware_identifier": "iPhone16,1",
+    "os_name": "iOS",
+    "microphone_display_name": "iPhone microphone",
+    "os_version": "Version 26.6.1 (Build 23G83)"
+  },
+  "photo": {
+    "filename": "photo.jpg",
+    "sha256": "75a8c9603dfff67d26bb3734a8dfadd3165be717e8ffc73df37dfc69a1ae7af0",
+    "included": true
+  },
+  "schema_version": "1.0.0",
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "environment": {
+    "group_id": "nature_outdoors",
+    "taxonomy_version": "1",
+    "type_id": "urban_park"
+  },
+  "sound_level": {
+    "laeq_db_a": 60.96395493786899,
+    "lceq_db_c": 78.62898459896475,
+    "lafmin_db_a": 48.93827966948599,
+    "lafmax_db_a": 73.94427886913903,
+    "lcpeak_db_c": 106.0079053518025,
+    "lzeq_db_z": 79.90947612232307
+  },
+  "public_location": {
+    "city": "Croydon",
+    "approximate_area": null,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "region": null,
+    "place_name": null,
+    "visibility": "city"
+  },
+  "software": {
+    "application_version": "1.0",
+    "name": "DSR SPL Reference",
+    "build": "2",
+    "analysis_method_version": "spl-reference-1"
+  },
+  "notes": "Step away from the city and the soundscape changes — but the city doesn’t completely disappear.\n\nThis short measurement captures the natural background of an open outdoor environment: a gentle breeze, subtle sounds from the surrounding landscape, and, far on the horizon, the faint but persistent acoustic presence of the city.\n\nIt’s an interesting reference for SPL Reference: quiet is rarely silence. Even when individual sounds are barely noticeable, together they create the acoustic baseline of a place.",
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "measurement": {
+    "title": "How Nature Sounds Outside The Big City",
+    "completed_at_utc": "2026-09-10T14:58:41Z",
+    "duration_seconds": 104.79999999999832
+  },
+  "attribution": {
+    "mode": "anonymous",
+    "display_name": null,
+    "organisation": null
+  },
+  "measurement_settings": {
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ],
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ]
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000033",
+    "measurement_uuid": "8b9825b4-7799-4713-a4fd-87a14b00140a",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
