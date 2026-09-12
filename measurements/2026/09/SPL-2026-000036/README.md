@@ -1,6 +1,6 @@
 # SPL-2026-000036
 
-Measure 015
+Small Speaker - Very Big Low End
 
 - Completed: 2026-09-12T09:48:34Z
 - LAeq: 84.40970873075196 dBA
