@@ -26,7 +26,8 @@ nav { display: flex; justify-content: space-between; align-items: center; gap: 2
 h1 { font-size: clamp(2.65rem,7vw,5.5rem); line-height: .98; letter-spacing: -.055em; margin: 14px 0 24px; max-width: 900px; }
 .intro { color: var(--muted); font-size: clamp(1.05rem,2vw,1.3rem); line-height: 1.6; margin: 0; }
 .app-promo { margin-top: 30px; }
-.app-promo p { margin: 0 0 12px; color: var(--ink); font-size: 1.05rem; font-weight: 700; }
+.app-promo p { margin: 0 0 9px; color: var(--ink); font-size: 1.05rem; font-weight: 700; }
+.app-promo .app-promo-copy { max-width: 580px; color: var(--muted); font-size: .98rem; font-weight: 400; line-height: 1.55; margin-bottom: 16px; }
 .app-promo a { display: inline-block; line-height: 0; }
 .app-promo img { display: block; width: 156px; height: 52px; }
 .app-promo a:hover img { opacity: .86; }
