@@ -1,0 +1,83 @@
+{
+  "measurement": {
+    "completed_at_utc": "2026-09-12T09:33:41Z",
+    "title": "How Loud Is “Quality”?",
+    "duration_seconds": 27.600000000000122
+  },
+  "public_location": {
+    "place_name": "Radisson Red",
+    "visibility": "named_public_place",
+    "approximate_area": null,
+    "region": null,
+    "country_name": "United Kingdom",
+    "country_code": "GB",
+    "city": "Heathrow"
+  },
+  "attribution": {
+    "mode": "name_and_organisation",
+    "display_name": "Michelangelo Canonico",
+    "organisation": "Direct Sound Records"
+  },
+  "instrument": {
+    "microphone_display_name": "iPhone microphone",
+    "input_path": "Built-in input",
+    "os_name": "iOS",
+    "os_version": "Version 26.6.2 (Build 23G90)",
+    "device_hardware_identifier": "iPhone16,1"
+  },
+  "notes": "At a Hi-Fi show, we often talk about resolution, dynamics, realism and soundstage — but rarely about the actual level at which those qualities are being demonstrated.\nThis measurement, taken during a listening session at the HiFi Stereo NET Show at Heathrow, looks at the SPL behind the experience. A system may sound effortless and refined even at a high level, which can make the true exposure less obvious than with harsher or more distorted playback.\nThat makes the question interesting: does better sound quality make loud listening feel more comfortable — and therefore easier to underestimate?\nA small real-world measurement linking perceived quality, playback level and listening exposure.\nCurtesy Airt",
+  "photo": {
+    "filename": "photo.jpg",
+    "sha256": "c70ada50c8a1ac44b32cc6514dce6ebbe350a947ca51cc0ad017e7ae43e51d03",
+    "included": true
+  },
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "sound_level": {
+    "lceq_db_c": 92.14567408306536,
+    "lcpeak_db_c": 107.99732611712463,
+    "lzeq_db_z": 92.46691982503239,
+    "lafmax_db_a": 94.19881589553621,
+    "lafmin_db_a": 74.02986664199663,
+    "laeq_db_a": 84.14414358302128
+  },
+  "schema_version": "1.0.0",
+  "software": {
+    "build": "2",
+    "name": "DSR SPL Reference",
+    "analysis_method_version": "spl-reference-1",
+    "application_version": "1.0"
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "environment": {
+    "group_id": "music_nightlife",
+    "taxonomy_version": "1",
+    "type_id": "hifi_demo_room"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000035",
+    "measurement_uuid": "b96db067-696f-4461-b9ea-8eca5928e057",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
