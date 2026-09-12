@@ -1,0 +1,83 @@
+{
+  "photo": {
+    "filename": "photo.jpg",
+    "sha256": "595aa1174283eb0076c7236882819d706955af9f26a3254dbcccb38df2522d49",
+    "included": true
+  },
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "calibration": {
+    "method": "Uncalibrated",
+    "status": "indicative"
+  },
+  "measurement": {
+    "duration_seconds": 156.4999999999954,
+    "title": "Measure 015",
+    "completed_at_utc": "2026-09-12T09:48:34Z"
+  },
+  "environment": {
+    "taxonomy_version": "1",
+    "group_id": "music_nightlife",
+    "type_id": "hifi_demo_room"
+  },
+  "sound_level": {
+    "lceq_db_c": 90.2486173148276,
+    "laeq_db_a": 84.40970873075196,
+    "lzeq_db_z": 90.82815679298899,
+    "lafmax_db_a": 92.41695940745336,
+    "lafmin_db_a": 61.548935497757185,
+    "lcpeak_db_c": 107.9432666184239
+  },
+  "notes": "Small Speaker. Very Big Low End.\n\nThis one wasn’t really about how loud the demonstration was, but about what was happening at the bottom of the spectrum.\n\nDuring a demonstration by D’Von Audio, SPL Reference captured a remarkably extended and controlled low-frequency response from a relatively compact **pre-production loudspeaker.\n\nIn the conditions of this demonstration, the measured response extended to around 24 Hz, remaining impressively linear— an unexpected result from a speaker of this size.\n\nMore interesting than sheer bass quantity was the way the system managed the low end dynamically: depth, control and extension without the bass simply dominating the presentation.\n\nA good reminder of why at DSR we like to put measurements alongside listening impressions: sometimes what surprises the ears becomes even more interesting when you can see what is happening.",
+  "instrument": {
+    "device_hardware_identifier": "iPhone16,1",
+    "microphone_display_name": "iPhone microphone",
+    "os_name": "iOS",
+    "input_path": "Built-in input",
+    "os_version": "Version 26.6.2 (Build 23G90)"
+  },
+  "attribution": {
+    "organisation": "Direct Sound Records",
+    "mode": "name_and_organisation",
+    "display_name": "Michelangelo Canonico"
+  },
+  "software": {
+    "analysis_method_version": "spl-reference-1",
+    "application_version": "1.0",
+    "name": "DSR SPL Reference",
+    "build": "2"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "public_location": {
+    "country_code": "GB",
+    "visibility": "named_public_place",
+    "city": "Heathrow",
+    "place_name": "Addison Red",
+    "region": null,
+    "approximate_area": null,
+    "country_name": "United Kingdom"
+  },
+  "schema_version": "1.0.0",
+  "identity": {
+    "public_measurement_id": "SPL-2026-000036",
+    "measurement_uuid": "193d069d-607b-4723-b980-2c4012a963b5",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
