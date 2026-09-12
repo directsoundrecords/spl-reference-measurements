@@ -1,0 +1,83 @@
+{
+  "environment": {
+    "taxonomy_version": "1",
+    "group_id": "sport_leisure",
+    "type_id": "stadium"
+  },
+  "sound_level": {
+    "lafmax_db_a": 86.60025825911266,
+    "lzeq_db_z": 90.58086915231837,
+    "lceq_db_c": 87.63641286434103,
+    "lcpeak_db_c": 113.00151455097992,
+    "laeq_db_a": 72.53999544999417,
+    "lafmin_db_a": 62.14009129114592
+  },
+  "measurement": {
+    "title": "How Far Does the Sound of a Stadium Travel?",
+    "duration_seconds": 41.100000000000314,
+    "completed_at_utc": "2026-09-12T13:57:02Z"
+  },
+  "software": {
+    "name": "DSR SPL Reference",
+    "analysis_method_version": "spl-reference-1",
+    "build": "2",
+    "application_version": "1.0"
+  },
+  "instrument": {
+    "os_version": "Version 26.6.2 (Build 23G90)",
+    "os_name": "iOS",
+    "input_path": "Built-in input",
+    "microphone_display_name": "Dayton",
+    "device_hardware_identifier": "iPhone16,1"
+  },
+  "calibration": {
+    "status": "device_calibrated",
+    "method": "Calibrated"
+  },
+  "measurement_settings": {
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ],
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ]
+  },
+  "photo": {
+    "filename": "photo.jpg",
+    "sha256": "ffc5efe0e769c8ef6dbeba5023286a3a543db148ca9e13c475ab201d874531bb",
+    "included": true
+  },
+  "public_location": {
+    "country_code": "GB",
+    "approximate_area": "South London",
+    "region": null,
+    "visibility": "approximate_area",
+    "country_name": "United Kingdom",
+    "place_name": null,
+    "city": "Croydon"
+  },
+  "notes": "You don’t need to be inside a football stadium to experience the match.\nThis SPL Reference measurement was taken at a distance from a stadium during a football match, capturing the crowd as part of the surrounding soundscape. From afar, thousands of individual voices merge into a continuous background presence, punctuated by moments when the crowd suddenly reacts as one.\nIt’s an interesting way to measure not just how loud a stadium is, but how far its acoustic footprint extends into the surrounding environment.\nEnvironment: Outdoor / urban\nSource: Football stadium and crowd, measured at a distance\nMeasurement type: Community / environmental noise",
+  "schema_version": "1.0.0",
+  "attribution": {
+    "mode": "anonymous",
+    "display_name": null,
+    "organisation": null
+  },
+  "measurement_quality": {
+    "classification": "device_calibrated"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000037",
+    "measurement_uuid": "98a55e02-3db9-41df-9f62-37398f0419a1",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
