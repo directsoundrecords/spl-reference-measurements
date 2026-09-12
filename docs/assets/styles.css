@@ -25,8 +25,12 @@ nav { display: flex; justify-content: space-between; align-items: center; gap: 2
 .eyebrow { color: var(--copper); text-transform: uppercase; letter-spacing: .15em; font-size: .78rem; font-weight: 800; }
 h1 { font-size: clamp(2.65rem,7vw,5.5rem); line-height: .98; letter-spacing: -.055em; margin: 14px 0 24px; max-width: 900px; }
 .intro { color: var(--muted); font-size: clamp(1.05rem,2vw,1.3rem); line-height: 1.6; margin: 0; }
-.app-store-link { display: inline-block; margin-top: 28px; border-radius: 999px; background: var(--copper); color: #101010; font-weight: 800; padding: 13px 19px; text-decoration: none; }
-.app-store-link:hover { background: #e6a561; }
+.app-promo { margin-top: 30px; }
+.app-promo p { margin: 0 0 12px; color: var(--ink); font-size: 1.05rem; font-weight: 700; }
+.app-promo a { display: inline-block; line-height: 0; }
+.app-promo img { display: block; width: 156px; height: 52px; }
+.app-promo a:hover img { opacity: .86; }
+.app-promo a:focus-visible { outline: 2px solid var(--mint); outline-offset: 5px; border-radius: 7px; }
 .summary { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; margin: 0 0 -64px; }
 .summary div { background: var(--panel); padding: 22px 26px; }
 .summary dt { color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; }
