@@ -1,0 +1,83 @@
+{
+  "instrument": {
+    "microphone_display_name": "iPhone microphone",
+    "input_path": "Built-in input",
+    "os_name": "iOS",
+    "os_version": "Version 26.6.2 (Build 23G90)",
+    "device_hardware_identifier": "iPhone16,1"
+  },
+  "schema_version": "1.0.0",
+  "attribution": {
+    "organisation": "Direct sound records",
+    "display_name": "Michelangelo Canonico",
+    "mode": "name_and_organisation"
+  },
+  "environment": {
+    "taxonomy_version": "1",
+    "type_id": "hifi_demo_room",
+    "group_id": "music_nightlife"
+  },
+  "photo": {
+    "filename": "photo.jpg",
+    "sha256": "ee3a1a77adf55d8c083d72cc802323cd343a78fbbe38b4382ba2cb8089139d23",
+    "included": true
+  },
+  "public_location": {
+    "visibility": "city",
+    "place_name": null,
+    "country_code": "GB",
+    "city": "Heathrow",
+    "approximate_area": null,
+    "country_name": "United Kingdom",
+    "region": null
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "measurement": {
+    "completed_at_utc": "2026-09-12T09:30:03Z",
+    "duration_seconds": 63.20000000000063,
+    "title": "How Loud Is Hi-Fi at an Audio Show?"
+  },
+  "sound_level": {
+    "lcpeak_db_c": 108.53742247613134,
+    "lceq_db_c": 88.79593625796484,
+    "lzeq_db_z": 88.96147336021026,
+    "laeq_db_a": 82.33410458206015,
+    "lafmax_db_a": 91.5410817163237,
+    "lafmin_db_a": 57.03800242915358
+  },
+  "measurement_settings": {
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ],
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ]
+  },
+  "notes": "A listening session at the HiFi Stereo NET Show at Heathrow offers a very different experience from listening at home.\nSystems are demonstrated in unfamiliar rooms, with visitors coming and going, conversations outside or inside the room, and exhibitors often choosing generous playback levels to reveal dynamics, impact and the capabilities of the system.\nThis SPL Reference measurement captures the actual sound exposure during a typical show listening session. How does it compare with a relaxed evening at home? Are we listening louder than we realise when the system, the music and the atmosphere encourage us to turn it up?\nA useful real-world reference connecting Hi-Fi performance, listening habits and sound exposure — because evaluating how a system sounds is only part of the story; knowing how loudly we are experiencing it adds another dimension.\nEnvironment: Hi-Fi show / demonstration room\nActivity: Music listening\nPurpose: Listening-level and exposure reference.\nImage courtesy: Reference Audio",
+  "software": {
+    "name": "DSR SPL Reference",
+    "application_version": "1.0",
+    "analysis_method_version": "spl-reference-1",
+    "build": "2"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000034",
+    "measurement_uuid": "aa87a6cc-2d4a-46d8-ae1f-89ce87afe23b",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
