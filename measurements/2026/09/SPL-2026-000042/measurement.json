@@ -1,0 +1,83 @@
+{
+  "instrument": {
+    "os_name": "iOS",
+    "microphone_display_name": "iPhone microphone",
+    "device_hardware_identifier": "iPhone16,1",
+    "input_path": "Built-in input",
+    "os_version": "Version 26.6.2 (Build 23G90)"
+  },
+  "calibration": {
+    "method": "Uncalibrated",
+    "status": "indicative"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "attribution": {
+    "organisation": null,
+    "mode": "anonymous",
+    "display_name": null
+  },
+  "software": {
+    "name": "DSR SPL Reference",
+    "analysis_method_version": "spl-reference-1",
+    "application_version": "1.0",
+    "build": "2"
+  },
+  "notes": "You can hear it long before you reach the roadworks.\n\nThis measurement captures an excavator-mounted hydraulic breaker breaking the road surface at close range. What surprised me wasn’t only the level — around 100 dB during the measurement — but how persistent the sound remained and how clearly it could still be heard well beyond the immediate work area.\n\nThe workers nearby were wearing hearing protection, and for good reason: at these levels, duration becomes as important as loudness. For a pedestrian, the exposure may last only seconds; for the people operating the machinery, it can be part of an entire working day.\n\nA striking example of how one relatively localised source can temporarily change the acoustic environment of a much larger part of a city street.",
+  "environment": {
+    "group_id": "construction",
+    "type_id": "roadworks",
+    "taxonomy_version": "1"
+  },
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "measurement": {
+    "completed_at_utc": "2026-09-21T07:44:24Z",
+    "title": "Measure 017",
+    "duration_seconds": 69.10000000000035
+  },
+  "sound_level": {
+    "laeq_db_a": 98.72187994497253,
+    "lcpeak_db_c": 125.10476875665728,
+    "lceq_db_c": 99.244916016999,
+    "lafmin_db_a": 75.88412711552394,
+    "lafmax_db_a": 106.48430267787413,
+    "lzeq_db_z": 99.62851867767333
+  },
+  "public_location": {
+    "country_name": "United Kingdom",
+    "city": "City Of London",
+    "region": null,
+    "country_code": "GB",
+    "place_name": null,
+    "visibility": "city",
+    "approximate_area": null
+  },
+  "photo": {
+    "sha256": "a422c1a7bb46f0dea2cbb94b5c0138e161911ab0f76a96d3ad8e8921ea50a494",
+    "included": true,
+    "filename": "photo.jpg"
+  },
+  "schema_version": "1.0.0",
+  "identity": {
+    "public_measurement_id": "SPL-2026-000042",
+    "measurement_uuid": "9c91248f-7a70-4bb4-aecd-4446fba0cfbb",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
