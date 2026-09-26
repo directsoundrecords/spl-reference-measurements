@@ -1,0 +1,83 @@
+{
+  "environment": {
+    "group_id": "food_drink",
+    "taxonomy_version": "1",
+    "type_id": "restaurant"
+  },
+  "attribution": {
+    "mode": "anonymous",
+    "display_name": null,
+    "organisation": null
+  },
+  "photo": {
+    "included": true,
+    "sha256": "aab476aac4aed9040c87c9d3fc7509ed903ac21de496eede2ce3e275fc4fc0fa",
+    "filename": "photo.jpg"
+  },
+  "software": {
+    "build": "2",
+    "analysis_method_version": "spl-reference-1",
+    "application_version": "1.0",
+    "name": "DSR SPL Reference"
+  },
+  "instrument": {
+    "device_hardware_identifier": "iPhone16,1",
+    "os_version": "Version 26.7 (Build 23H24)",
+    "os_name": "iOS",
+    "microphone_display_name": "iPhone microphone",
+    "input_path": "Built-in input"
+  },
+  "notes": "Excellent food, lively conversation, a busy dining room — and a sound level that made relaxing surprisingly difficult.\n\nThis SPL Reference measurement was taken during dinner in a Turkish restaurant, where conversations, music, service and the reflections of many simultaneous voices combined into a dense and energetic soundscape.\n\nNothing was necessarily wrong with the atmosphere; the restaurant was simply very lively. Yet it raises an interesting question: at what point does a vibrant restaurant become acoustically tiring?\n\nA reminder that our experience of a restaurant is shaped not only by what is on the plate, but also by the environment in which we enjoy it.",
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "sound_level": {
+    "lafmax_db_a": 104.99023104093584,
+    "lzeq_db_z": 88.66582747376458,
+    "lafmin_db_a": 73.66123869675583,
+    "laeq_db_a": 87.05749041202088,
+    "lceq_db_c": 88.61370954833163,
+    "lcpeak_db_c": 119.09625128198525
+  },
+  "measurement_settings": {
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ],
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ]
+  },
+  "measurement": {
+    "title": "When Great Food Meets a Loud Room",
+    "duration_seconds": 576.2000000000625,
+    "completed_at_utc": "2026-09-26T19:12:44Z"
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "schema_version": "1.0.0",
+  "public_location": {
+    "city": "Cambridge",
+    "visibility": "city",
+    "region": null,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "place_name": null,
+    "approximate_area": null
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000045",
+    "measurement_uuid": "57cef918-7f8e-4eb1-b3bf-9abc7a24d74d",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
