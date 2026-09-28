@@ -44,7 +44,7 @@
   "measurement": {
     "duration_seconds": 1.8000000000000005,
     "completed_at_utc": "2026-09-28T11:08:38Z",
-    "title": "Measure 019"
+    "title": "Same Car, Same Speed — A 10 dB Difference"
   },
   "measurement_quality": {
     "classification": "indicative"
@@ -67,7 +67,7 @@
   "photo": {
     "filename": "photo.jpg",
     "included": true,
-    "sha256": "586d520b3bc23132988dec1f9f545c206d505863822faa03045c79f63099d8cb"
+    "sha256": "033db1625799f7302f9d2bedceb09a615b0d0b863f68e5130ee9e32f5dd3fb1e"
   },
   "identity": {
     "public_measurement_id": "SPL-2026-000048",
