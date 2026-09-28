@@ -1,0 +1,82 @@
+{
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "environment": {
+    "group_id": "transport",
+    "taxonomy_version": "1",
+    "type_id": "car"
+  },
+  "attribution": {
+    "mode": "name",
+    "organisation": null,
+    "display_name": "Michelangelo Canonico"
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "schema_version": "1.0.0",
+  "sound_level": {
+    "laeq_db_a": 65.98314393632452,
+    "lceq_db_c": 70.52539141345775,
+    "lzeq_db_z": 70.91801820214086,
+    "lafmax_db_a": 71.61459992330137,
+    "lafmin_db_a": 61.44930393212288,
+    "lcpeak_db_c": 91.16336471154577
+  },
+  "instrument": {
+    "microphone_display_name": "iPhone microphone",
+    "device_hardware_identifier": "iPhone16,1",
+    "input_path": "Built-in input",
+    "os_name": "iOS",
+    "os_version": "Version 26.7 (Build 23H24)"
+  },
+  "measurement": {
+    "duration_seconds": 1.8000000000000005,
+    "completed_at_utc": "2026-09-28T11:08:38Z",
+    "title": "Measure 019"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "public_location": {
+    "visibility": "approximate_area",
+    "country_code": "GB",
+    "place_name": null,
+    "region": "Cambridgeshire",
+    "city": "Cambridge",
+    "country_name": "United Kingdom",
+    "approximate_area": "M11 Towards London"
+  },
+  "software": {
+    "application_version": "1.0",
+    "build": "2",
+    "name": "DSR SPL Reference",
+    "analysis_method_version": "spl-reference-1"
+  },
+  "photo": {
+    "filename": "photo.jpg",
+    "included": true,
+    "sha256": "586d520b3bc23132988dec1f9f545c206d505863822faa03045c79f63099d8cb"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000048",
+    "measurement_uuid": "7e833c41-5dec-4b42-9b88-f787da5f32dd",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
