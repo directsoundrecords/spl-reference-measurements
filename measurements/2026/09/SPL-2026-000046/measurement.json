@@ -1,0 +1,83 @@
+{
+  "environment": {
+    "type_id": "home",
+    "group_id": "residential",
+    "taxonomy_version": "1"
+  },
+  "public_location": {
+    "country_code": "GB",
+    "approximate_area": null,
+    "visibility": "city",
+    "region": null,
+    "country_name": "United Kingdom",
+    "city": "Cambridge",
+    "place_name": null
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "attribution": {
+    "mode": "name",
+    "organisation": null,
+    "display_name": "Michelangelo Canonico"
+  },
+  "instrument": {
+    "input_path": "Built-in input",
+    "device_hardware_identifier": "iPhone16,1",
+    "os_version": "Version 26.7 (Build 23H24)",
+    "os_name": "iOS",
+    "microphone_display_name": "iPhone microphone"
+  },
+  "software": {
+    "build": "2",
+    "name": "DSR SPL Reference",
+    "application_version": "1.0",
+    "analysis_method_version": "spl-reference-1"
+  },
+  "sound_level": {
+    "lafmin_db_a": 30.006175907453994,
+    "lcpeak_db_c": 56.38360392240246,
+    "laeq_db_a": 30.75299311899181,
+    "lafmax_db_a": 36.17724115531959,
+    "lceq_db_c": 34.597227005529234,
+    "lzeq_db_z": 35.7772250700158
+  },
+  "schema_version": "1.0.0",
+  "photo": {
+    "included": true,
+    "sha256": "0901a9f5491401d00e4cffdb47106b033acfad5111824b3801477e366ce6f45b",
+    "filename": "photo.jpg"
+  },
+  "measurement": {
+    "title": "What Does 30 dB Sound Like?",
+    "duration_seconds": 98.49999999999868,
+    "completed_at_utc": "2026-09-27T04:50:10Z"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "notes": "Late at night, from a loft overlooking the garden, the world seems to have almost switched itself off.\nThis SPL Reference measurement captured a background level of around 30 dB — no traffic demanding attention, no conversations, no machinery; just the faint acoustic traces of an environment that feels virtually silent.\nAnd that is perhaps the interesting part: absolute silence is not zero decibels. Even when we perceive silence, there is still a measurable soundscape around us.\nA quiet reference point for the SPL Reference collection — and a reminder of just how different 30 dB feels after a day surrounded by the sound of the city.",
+  "identity": {
+    "public_measurement_id": "SPL-2026-000046",
+    "measurement_uuid": "5eb19915-1125-45ae-a687-87588f81e3d9",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
