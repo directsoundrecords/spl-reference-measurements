@@ -1,0 +1,83 @@
+{
+  "software": {
+    "build": "2",
+    "application_version": "1.0",
+    "analysis_method_version": "spl-reference-1",
+    "name": "DSR SPL Reference"
+  },
+  "measurement": {
+    "title": "When Music Becomes an Exposure",
+    "completed_at_utc": "2026-09-27T13:04:33Z",
+    "duration_seconds": 49.10000000000043
+  },
+  "instrument": {
+    "microphone_display_name": "iPhone microphone",
+    "device_hardware_identifier": "iPhone16,1",
+    "os_version": "Version 26.7 (Build 23H24)",
+    "input_path": "Built-in input",
+    "os_name": "iOS"
+  },
+  "environment": {
+    "taxonomy_version": "1",
+    "type_id": "live_music_venue",
+    "group_id": "music_nightlife"
+  },
+  "notes": "A recording session is about listening carefully — but how long can we listen when the monitoring level becomes part of the experience?\nDuring this session, SPL Reference measured 99.7 dB LAeq, 106 dB LCeq, 106.2 dB LAFmax, with a 125.8 dB LCpeak. The striking number here is not simply the peak: an LAeq close to 100 dB means the average acoustic energy remained very high throughout the measured period.\nFor perspective, NIOSH's 3 dB exchange-rate guidance gives approximately 15 minutes at 100 dBA as the daily exposure corresponding to its recommended occupational limit. Beyond that, accumulated exposure rises rapidly. CDC\nInterestingly, the 125.8 dB(C) peak is below the UK's workplace lower peak action value of 135 dB(C); it is the sustained level that deserves particular attention here. HSE\nFor musicians, engineers and producers, this is an important reminder: a session can sound fantastic and still represent substantial noise exposure. Monitoring level and listening time are part of the recording environment too.",
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "photo": {
+    "sha256": "d3372b270df6b0896f6ee6610737c0abe167c505d265da2b8aad16aabc9215d7",
+    "included": true,
+    "filename": "photo.jpg"
+  },
+  "schema_version": "1.0.0",
+  "sound_level": {
+    "lzeq_db_z": 106.13702032590365,
+    "lcpeak_db_c": 125.83418502429005,
+    "lceq_db_c": 105.99020851190195,
+    "lafmin_db_a": 89.60844431821079,
+    "laeq_db_a": 99.7348563963959,
+    "lafmax_db_a": 106.23179856943975
+  },
+  "attribution": {
+    "mode": "name",
+    "organisation": null,
+    "display_name": "Michelangelo Canonico"
+  },
+  "public_location": {
+    "place_name": null,
+    "approximate_area": null,
+    "country_name": "United Kingdom",
+    "visibility": "city",
+    "country_code": "GB",
+    "region": null,
+    "city": "Cambridge"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000047",
+    "measurement_uuid": "b4ac2e62-b87c-401a-b0dd-59df48a4b08e",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
