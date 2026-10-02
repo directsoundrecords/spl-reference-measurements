@@ -1,0 +1,82 @@
+{
+  "photo": {
+    "sha256": "0b9583fd6be7fc4d136e50d77d859d1ccb550fd09ce761e87728e8b36a1ee28a",
+    "filename": "photo.jpg",
+    "included": true
+  },
+  "measurement": {
+    "completed_at_utc": "2026-10-02T15:56:53Z",
+    "duration_seconds": 261.09999999999087,
+    "title": "Flight EasyJet Gatwick - Milan"
+  },
+  "software": {
+    "name": "DSR SPL Reference",
+    "build": "3",
+    "application_version": "1.1",
+    "analysis_method_version": "spl-reference-1"
+  },
+  "calibration": {
+    "status": "device_calibrated",
+    "method": "Calibrated"
+  },
+  "measurement_quality": {
+    "classification": "device_calibrated"
+  },
+  "public_location": {
+    "country_name": "Italy",
+    "country_code": "IT",
+    "city": "Milan",
+    "place_name": null,
+    "visibility": "city",
+    "approximate_area": null,
+    "region": null
+  },
+  "sound_level": {
+    "lcpeak_db_c": 102.73752950540639,
+    "lceq_db_c": 87.68742662266018,
+    "lzeq_db_z": 88.61822016074899,
+    "lafmax_db_a": 80.61387562993812,
+    "laeq_db_a": 76.7500030785985,
+    "lafmin_db_a": 75.2572705556321
+  },
+  "attribution": {
+    "display_name": null,
+    "mode": "anonymous",
+    "organisation": null
+  },
+  "environment": {
+    "type_id": "aircraft",
+    "group_id": "transport",
+    "taxonomy_version": "1"
+  },
+  "schema_version": "1.0.0",
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "instrument": {
+    "microphone_display_name": "Dayton",
+    "input_path": "Built-in input",
+    "os_name": "iOS",
+    "os_version": "Version 26.7.1 (Build 23H30)",
+    "device_hardware_identifier": "iPhone16,1"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000051",
+    "measurement_uuid": "b6ed825b-ad74-4b90-8edc-cb156d09965d",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
