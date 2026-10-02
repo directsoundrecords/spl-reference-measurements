@@ -1,0 +1,82 @@
+{
+  "instrument": {
+    "os_version": "Version 26.7.1 (Build 23H30)",
+    "os_name": "iOS",
+    "microphone_display_name": "Dayton",
+    "device_hardware_identifier": "iPhone16,1",
+    "input_path": "Built-in input"
+  },
+  "measurement_settings": {
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ],
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ]
+  },
+  "calibration": {
+    "status": "device_calibrated",
+    "method": "Calibrated"
+  },
+  "schema_version": "1.0.0",
+  "environment": {
+    "type_id": "aircraft",
+    "group_id": "transport",
+    "taxonomy_version": "1"
+  },
+  "software": {
+    "analysis_method_version": "spl-reference-1",
+    "name": "DSR SPL Reference",
+    "application_version": "1.1",
+    "build": "3"
+  },
+  "measurement_quality": {
+    "classification": "device_calibrated"
+  },
+  "attribution": {
+    "mode": "anonymous",
+    "display_name": null,
+    "organisation": null
+  },
+  "sound_level": {
+    "laeq_db_a": 78.60886786635275,
+    "lzeq_db_z": 95.74078794783193,
+    "lceq_db_c": 92.63670344694759,
+    "lafmax_db_a": 92.74133754936456,
+    "lafmin_db_a": 67.7125641792909,
+    "lcpeak_db_c": 114.09474166247011
+  },
+  "measurement": {
+    "title": "How Does the Sound of a Flight Change During Landing?",
+    "completed_at_utc": "2026-10-02T16:26:06Z",
+    "duration_seconds": 225.49999999999147
+  },
+  "photo": {
+    "sha256": "e9c732d5023dc93bcf4e46730423306f6a824b38c0266e563d8dbe80a4e29801",
+    "included": true,
+    "filename": "photo.jpg"
+  },
+  "public_location": {
+    "visibility": "city",
+    "country_code": "IT",
+    "country_name": "Italy",
+    "region": null,
+    "city": "Milan",
+    "approximate_area": null,
+    "place_name": null
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000050",
+    "measurement_uuid": "9a76a59f-0a58-4114-9da0-8fa6ea7174a3",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
