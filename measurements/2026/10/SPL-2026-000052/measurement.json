@@ -1,0 +1,83 @@
+{
+  "notes": "After presenting SPL Reference at the Hi-Fidelity show in Milan, there was one more opportunity to put the app to work: the flight home to London.\n\nThis measurement captures takeoff from inside the aircraft cabin, from the acceleration along the runway through lift-off and the initial climb. Engine thrust, aerodynamic noise and vibration combine to create one of the most energetic acoustic phases of a flight.\n\nThe interesting question is the comparison: how much louder is takeoff than the steady noise we experience during cruise? We tend to notice the drama of takeoff, but a shorter, louder event and several hours of continuous cabin noise represent very different kinds of sound exposure.\n\nA fitting final measurement for the Milan trip: using the same app presented to the Hi-Fi community to measure the journey home.\n\nEnvironment: Aircraft cabin\nJourney: Milan → London\nEvent: Takeoff and initial climb\nMeasurement type: Transport / personal sound exposure",
+  "schema_version": "1.0.0",
+  "public_location": {
+    "place_name": null,
+    "approximate_area": null,
+    "region": null,
+    "city": "Milan",
+    "country_code": "IT",
+    "country_name": "Italy",
+    "visibility": "city"
+  },
+  "environment": {
+    "taxonomy_version": "1",
+    "group_id": "transport",
+    "type_id": "aircraft"
+  },
+  "instrument": {
+    "os_version": "Version 26.7.1 (Build 23H30)",
+    "os_name": "iOS",
+    "microphone_display_name": "Dayton",
+    "input_path": "Built-in input",
+    "device_hardware_identifier": "iPhone16,1"
+  },
+  "measurement": {
+    "duration_seconds": 176.59999999999425,
+    "completed_at_utc": "2026-10-04T17:27:21Z",
+    "title": "From Milan to London — How Loud Is Takeoff?"
+  },
+  "sound_level": {
+    "lafmin_db_a": 72.29197436426925,
+    "lcpeak_db_c": 119.7709963791303,
+    "lafmax_db_a": 90.15409479771425,
+    "laeq_db_a": 81.78272539216792,
+    "lceq_db_c": 96.6548323781943,
+    "lzeq_db_z": 99.50002829080611
+  },
+  "calibration": {
+    "status": "device_calibrated",
+    "method": "Calibrated"
+  },
+  "software": {
+    "application_version": "1.1",
+    "name": "DSR SPL Reference",
+    "analysis_method_version": "spl-reference-1",
+    "build": "3"
+  },
+  "attribution": {
+    "organisation": "Direct Sound Records",
+    "mode": "name_and_organisation",
+    "display_name": "Michelangelo Canonico"
+  },
+  "photo": {
+    "included": true,
+    "filename": "photo.jpg",
+    "sha256": "19bfcc2493db7629a4254ad5839946d9b29099a63d11909d3ee22ad802fbdcab"
+  },
+  "measurement_quality": {
+    "classification": "device_calibrated"
+  },
+  "measurement_settings": {
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ],
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ]
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000052",
+    "measurement_uuid": "2a9d0e6e-58d1-4904-ae39-c2f740c2b6ec",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
