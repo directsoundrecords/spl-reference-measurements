@@ -1,0 +1,83 @@
+{
+  "environment": {
+    "type_id": "national_park",
+    "group_id": "nature_outdoors",
+    "taxonomy_version": "1"
+  },
+  "public_location": {
+    "city": "South Norwood Lake",
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "visibility": "city",
+    "approximate_area": null,
+    "region": null,
+    "place_name": null
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "measurement": {
+    "duration_seconds": 69.80000000000031,
+    "title": "Band In South Norwood Lake",
+    "completed_at_utc": "2026-10-17T15:50:25Z"
+  },
+  "sound_level": {
+    "lafmin_db_a": 79.48523178156309,
+    "lcpeak_db_c": 113.69270611816391,
+    "lceq_db_c": 94.46782540439528,
+    "lzeq_db_z": 94.6224582707757,
+    "laeq_db_a": 92.33948953150639,
+    "lafmax_db_a": 102.87987645212513
+  },
+  "schema_version": "1.0.0",
+  "instrument": {
+    "input_path": "Built-in input",
+    "os_name": "iOS",
+    "os_version": "Version 26.7.1 (Build 23H30)",
+    "microphone_display_name": "iPhone microphone",
+    "device_hardware_identifier": "iPhone16,1"
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "attribution": {
+    "organisation": null,
+    "mode": "anonymous",
+    "display_name": null
+  },
+  "notes": "A walk through South Norwood Lake Park, a friendly trio playing live music, and people enjoying a drink at the nearby kiosk. What could be more relaxing?\n\nStanding just 5–6 metres from the musicians, I was surprised when SPL Reference displayed a “Loud” warning with a potential hearing-risk indication.\n\nThe performance combined backing tracks with live guitars and vocals, creating an energetic soundscape that felt perfectly natural in such a pleasant setting.\n\nBut this raises an interesting question: how often do we underestimate our sound exposure simply because we're enjoying ourselves?\n\nFor visitors stopping briefly, the exposure may be limited. But what about those spending hours at the drinks kiosk, or the musicians performing throughout the afternoon?\n\nA reminder that hearing risk depends not only on how loud something sounds, but also on how long we are exposed to it. Enjoyable music is still acoustic energy, and our ears don't distinguish between sounds we love and sounds we dislike.\n\nEnvironment: Outdoor park / live music\nSound sources: Backing tracks, guitars and vocals\nDistance: Approximately 5–6 metres from performers\nMeasurement type: Recreational sound exposure / live music",
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "photo": {
+    "sha256": "3ef2a758547d20e62a2176b3e1b7f14b3f189bd503ca4ee447336d331472eece",
+    "filename": "photo.jpg",
+    "included": true
+  },
+  "software": {
+    "name": "DSR SPL Reference",
+    "application_version": "1.1",
+    "build": "3",
+    "analysis_method_version": "spl-reference-1"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000053",
+    "measurement_uuid": "7a48f503-d58c-4ab5-b0fa-8f33cb66da6b",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
