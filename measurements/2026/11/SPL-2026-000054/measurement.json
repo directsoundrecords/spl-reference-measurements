@@ -1,0 +1,83 @@
+{
+  "photo": {
+    "included": true,
+    "filename": "photo.jpg",
+    "sha256": "7153c784da48ccfadc305344823b729268178ad2c0ff10434bec7a856cd6b2ac"
+  },
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "notes": "While waiting outside to board my flight, I decided to take a quick noise measurement. Another aircraft, more than 100 metres away, was powering up its engines. I was genuinely surprised by how loud it was, even at that distance. An impressive reminder of just how much sound energy these engines produce!",
+  "instrument": {
+    "device_hardware_identifier": "iPhone16,1",
+    "os_name": "iOS",
+    "microphone_display_name": "iPhone microphone",
+    "input_path": "Built-in input",
+    "os_version": "Version 26.7.1 (Build 23H30)"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "software": {
+    "name": "DSR SPL Reference",
+    "analysis_method_version": "spl-reference-1",
+    "application_version": "1.1",
+    "build": "3"
+  },
+  "measurement": {
+    "completed_at_utc": "2026-11-04T11:38:48Z",
+    "duration_seconds": 8.499999999999986,
+    "title": "Measure 025"
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "schema_version": "1.0.0",
+  "attribution": {
+    "organisation": null,
+    "mode": "anonymous",
+    "display_name": null
+  },
+  "environment": {
+    "group_id": "transport",
+    "type_id": "airport_terminal",
+    "taxonomy_version": "1"
+  },
+  "sound_level": {
+    "lceq_db_c": 94.94769921204986,
+    "laeq_db_a": 89.30527002630258,
+    "lzeq_db_z": 95.25542912426197,
+    "lcpeak_db_c": 109.98649177537577,
+    "lafmax_db_a": 92.28557757214985,
+    "lafmin_db_a": 87.3195944188748
+  },
+  "public_location": {
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "visibility": "city",
+    "city": "Gatwick",
+    "place_name": null,
+    "region": null,
+    "approximate_area": null
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000054",
+    "measurement_uuid": "884a3a01-2022-4dcd-8bc2-b771bdffe5ef",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
