@@ -1,0 +1,83 @@
+{
+  "notes": "A familiar journey, a different railway network — but how different is the acoustic experience?\n\nThis SPL Reference measurement captures the noise inside an Italian regional train, where the continuous interaction between wheels and rails, mechanical vibrations, airflow and occasional changes in speed creates a soundscape that passengers quickly become accustomed to.\n\nWhat makes this measurement particularly interesting is the opportunity to compare it with a previous journey aboard a Thameslink train in London.\n\nIs one train genuinely quieter, or does the difference lie in the character of the noise? A similar average sound level can conceal very different experiences, from steady low-frequency rumble to sharper, intermittent sounds.\n\nAnd perhaps the most important question: how much noise exposure do we accumulate during journeys that feel perfectly ordinary?\n\nAnother real-world reference showing why measuring everyday sound can reveal more than our ears alone might suggest.",
+  "public_location": {
+    "region": "Lazio",
+    "country_code": "IT",
+    "city": "Frascati",
+    "country_name": "Italy",
+    "visibility": "city",
+    "place_name": null,
+    "approximate_area": null
+  },
+  "software": {
+    "name": "DSR SPL Reference",
+    "analysis_method_version": "spl-reference-1",
+    "application_version": "1.1",
+    "build": "3"
+  },
+  "calibration": {
+    "status": "device_calibrated",
+    "method": "Calibrated"
+  },
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "measurement_quality": {
+    "classification": "device_calibrated"
+  },
+  "measurement": {
+    "title": "How Loud Is a Regional Train in Italy?",
+    "duration_seconds": 261.79999999999103,
+    "completed_at_utc": "2026-11-09T16:36:47Z"
+  },
+  "schema_version": "1.0.0",
+  "sound_level": {
+    "lzeq_db_z": 92.98385456554323,
+    "lafmin_db_a": 59.10155287347163,
+    "lcpeak_db_c": 110.7018303605571,
+    "lceq_db_c": 91.92869151272723,
+    "lafmax_db_a": 87.58063381830955,
+    "laeq_db_a": 78.91169799604775
+  },
+  "environment": {
+    "group_id": "transport",
+    "taxonomy_version": "1",
+    "type_id": "train"
+  },
+  "instrument": {
+    "input_path": "Built-in input",
+    "microphone_display_name": "Dayton",
+    "device_hardware_identifier": "iPhone16,1",
+    "os_name": "iOS",
+    "os_version": "Version 26.7.1 (Build 23H30)"
+  },
+  "attribution": {
+    "mode": "name_and_organisation",
+    "display_name": "Michelangelo Canonico",
+    "organisation": "Direct Sound Records"
+  },
+  "photo": {
+    "filename": "photo.jpg",
+    "included": true,
+    "sha256": "aaa737ae79c464a9f384305eda05f8041bf19c6444d749d257ec9ae38e398ec1"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000055",
+    "measurement_uuid": "aaf57837-b27d-408b-9a89-a0e316f6bdd6",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
