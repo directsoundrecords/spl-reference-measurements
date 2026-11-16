@@ -1,0 +1,83 @@
+{
+  "sound_level": {
+    "lafmin_db_a": 59.014102293231645,
+    "laeq_db_a": 82.24284234929974,
+    "lcpeak_db_c": 111.9028001095955,
+    "lzeq_db_z": 89.26112497538547,
+    "lceq_db_c": 88.74641555729205,
+    "lafmax_db_a": 93.33735945115384
+  },
+  "photo": {
+    "included": true,
+    "sha256": "81f76152ad6a4771701745c964789a693aa7e30b71b0d5463ba2be6936fdf244",
+    "filename": "photo.jpg"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "instrument": {
+    "os_version": "Version 26.7.1 (Build 23H30)",
+    "device_hardware_identifier": "iPhone16,1",
+    "microphone_display_name": "iPhone microphone",
+    "input_path": "Built-in input",
+    "os_name": "iOS"
+  },
+  "measurement_settings": {
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ],
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ]
+  },
+  "software": {
+    "analysis_method_version": "spl-reference-1",
+    "name": "DSR SPL Reference",
+    "build": "3",
+    "application_version": "1.1"
+  },
+  "environment": {
+    "type_id": "metro_train",
+    "group_id": "transport",
+    "taxonomy_version": "1"
+  },
+  "measurement": {
+    "completed_at_utc": "2026-11-09T17:15:23Z",
+    "title": "Measure 027",
+    "duration_seconds": 557.2000000000581
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "public_location": {
+    "visibility": "city",
+    "approximate_area": null,
+    "country_code": "IT",
+    "country_name": "Italy",
+    "place_name": null,
+    "region": "Lazio",
+    "city": "Rome"
+  },
+  "attribution": {
+    "mode": "anonymous",
+    "organisation": null,
+    "display_name": null
+  },
+  "schema_version": "1.0.0",
+  "notes": "Beneath the streets of Rome, the city has a different soundtrack.\n\nThis SPL Reference measurement captures the noise experienced aboard Metro Line B, where rolling wheels, rail vibrations, acceleration and braking create a constantly changing acoustic environment.\n\nHow does Rome's underground compare with London's Tube or other urban rail networks? Beyond the loudest moments, it's the continuous background noise and accumulated exposure that make everyday commuting worth measuring.\n\nA journey we rarely think of as a listening experience — yet our ears are passengers too.",
+  "identity": {
+    "public_measurement_id": "SPL-2026-000056",
+    "measurement_uuid": "5281d14d-f3d6-4fca-933f-5912d8e9d763",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
