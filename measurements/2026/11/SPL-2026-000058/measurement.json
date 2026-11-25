@@ -1,0 +1,83 @@
+{
+  "instrument": {
+    "os_version": "Version 27.2.1 (Build 24B156)",
+    "input_path": "Built-in input",
+    "microphone_display_name": "iPhone microphone",
+    "os_name": "iOS",
+    "device_hardware_identifier": "iPhone16,1"
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "public_location": {
+    "approximate_area": null,
+    "region": null,
+    "visibility": "city",
+    "city": "London",
+    "country_code": "GB",
+    "place_name": null,
+    "country_name": "United Kingdom"
+  },
+  "environment": {
+    "group_id": "food_drink",
+    "type_id": "pub",
+    "taxonomy_version": "1"
+  },
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "photo": {
+    "filename": "photo.jpg",
+    "sha256": "e94cd567be6d4bacb755817f8e444791be1bd02aab40ad84cdebd6696f80abcb",
+    "included": true
+  },
+  "attribution": {
+    "mode": "anonymous",
+    "display_name": null,
+    "organisation": null
+  },
+  "measurement": {
+    "completed_at_utc": "2026-11-19T18:16:10Z",
+    "duration_seconds": 385.50000000001916,
+    "title": "When the Party Gets Louder Than the Conversation"
+  },
+  "calibration": {
+    "method": "Uncalibrated",
+    "status": "indicative"
+  },
+  "notes": "An evening party in a pub near Bank, in the heart of London. A lively atmosphere, people enjoying themselves, conversations overlapping — and a surprisingly overwhelming level of noise.\n\nThis SPL Reference measurement captures the acoustic reality of a social evening where simply having a conversation becomes a challenge.\n\nHow much noise are we exposed to during an ordinary night out, without even realising it? We often associate hearing risks with concerts and nightclubs, yet a few hours in a crowded pub can also contribute significantly to our cumulative sound exposure.\n\nAn interesting comparison with restaurants, live music events and other social environments — and a reminder that having a good time doesn’t necessarily mean our ears are having one too.",
+  "software": {
+    "analysis_method_version": "spl-reference-1",
+    "build": "3",
+    "application_version": "1.1",
+    "name": "DSR SPL Reference"
+  },
+  "schema_version": "1.0.0",
+  "sound_level": {
+    "lceq_db_c": 98.58461497429803,
+    "laeq_db_a": 96.67513411686028,
+    "lzeq_db_z": 98.65374516697344,
+    "lcpeak_db_c": 121.68257977389968,
+    "lafmax_db_a": 110.55995916862334,
+    "lafmin_db_a": 88.11110450888377
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000058",
+    "measurement_uuid": "662e8634-baeb-421d-a2b6-442c665307ee",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
