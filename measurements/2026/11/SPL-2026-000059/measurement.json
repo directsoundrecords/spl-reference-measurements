@@ -1,0 +1,83 @@
+{
+  "measurement_settings": {
+    "frequency_weightings": [
+      "A",
+      "C",
+      "Z"
+    ],
+    "time_weightings": [
+      "Fast",
+      "Slow",
+      "Impulse"
+    ]
+  },
+  "measurement_quality": {
+    "classification": "indicative"
+  },
+  "environment": {
+    "taxonomy_version": "1",
+    "type_id": "food_court",
+    "group_id": "food_drink"
+  },
+  "photo": {
+    "filename": "photo.jpg",
+    "sha256": "83ca8d1ccfa0b5f9dea9a01984c4cd8873845829f19f8966dab5c790d6e322bc",
+    "included": true
+  },
+  "measurement": {
+    "title": "Measure 029",
+    "duration_seconds": 431.4000000000296,
+    "completed_at_utc": "2026-11-27T12:59:17Z"
+  },
+  "software": {
+    "build": "3",
+    "name": "DSR SPL Reference",
+    "analysis_method_version": "spl-reference-1",
+    "application_version": "1.1"
+  },
+  "public_location": {
+    "visibility": "city",
+    "place_name": null,
+    "approximate_area": null,
+    "country_name": "United Kingdom",
+    "region": null,
+    "country_code": "GB",
+    "city": "London"
+  },
+  "attribution": {
+    "organisation": null,
+    "display_name": null,
+    "mode": "anonymous"
+  },
+  "instrument": {
+    "os_version": "Version 27.2.1 (Build 24B156)",
+    "microphone_display_name": "iPhone microphone",
+    "input_path": "Built-in input",
+    "device_hardware_identifier": "iPhone16,1",
+    "os_name": "iOS"
+  },
+  "notes": "This is how a food market background noise looks like",
+  "schema_version": "1.0.0",
+  "sound_level": {
+    "lzeq_db_z": 91.84024672242393,
+    "lceq_db_c": 91.78519980312096,
+    "lafmin_db_a": 76.83791276667769,
+    "lcpeak_db_c": 136.06904220695617,
+    "lafmax_db_a": 110.87412286429289,
+    "laeq_db_a": 89.91328619549645
+  },
+  "calibration": {
+    "status": "indicative",
+    "method": "Uncalibrated"
+  },
+  "identity": {
+    "public_measurement_id": "SPL-2026-000059",
+    "measurement_uuid": "1bde4ccd-f8d7-4b59-8828-b1a4da6cc1f6",
+    "record_version": "1.0"
+  },
+  "publisher": {
+    "name": "Direct Sound Records",
+    "application": "DSR SPL Reference"
+  },
+  "license": "CC-BY-4.0"
+}
